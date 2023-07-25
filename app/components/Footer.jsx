@@ -5,7 +5,7 @@ const Footer = () => {
     <footer class="p-4 bg-gray-900 md:p-8 lg:p-10 dark:bg-gray-800">
       <div class="mx-auto max-w-screen-xl text-center">
         <a
-          href="#"
+          // href="#"
           class="flex justify-center items-center text-2xl font-semibold text-white"
         >
           <svg
