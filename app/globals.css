@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.cl-internal-11ewti4{
+height: 2.5rem;
+width: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cl-internal-11ewti4 {
+    height: 2rem;
+    width: 2rem;
+  }
+}

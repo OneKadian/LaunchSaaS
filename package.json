@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.0",
+    "@clerk/themes": "^1.7.5",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.4",
