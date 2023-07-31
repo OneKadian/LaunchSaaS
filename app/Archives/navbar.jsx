@@ -5,7 +5,6 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
-import { userProfile } from "../Function/UserProfile";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../Images/logo.png";
@@ -22,17 +21,17 @@ const Navbar = () => {
 
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const user = await userProfile();
-        setUser(user);
-      } catch (error) {
-        console.error("Error fetching user:", error);
-      }
-    };
-    fetchUser();
-  }, []);
+  //   useEffect(() => {
+  //     const fetchUser = async () => {
+  //       try {
+  //         const user = await userProfile();
+  //         setUser(user);
+  //       } catch (error) {
+  //         console.error("Error fetching user:", error);
+  //       }
+  //     };
+  //     fetchUser();
+  //   }, []);
 
   return (
     <header className="absolute inset-x-0 top-0 z-5">

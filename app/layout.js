@@ -2,7 +2,6 @@ import "./globals.css";
 import { ClerkProvider, UserProfile } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
-import userProfile from "./Function/UserProfile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <Navbar />
-        {/* <UserProfile /> */}
         <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>

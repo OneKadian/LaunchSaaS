@@ -5,7 +5,6 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
-import userProfile from "../Function/UserProfile";
 import Link from "next/link";
 
 const navigation = [

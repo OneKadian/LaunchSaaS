@@ -1,7 +1,6 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
-import { userProfile } from "../Function/UserProfile";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../Images/logo.png";
