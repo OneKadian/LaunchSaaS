@@ -32,7 +32,7 @@ const Navbar = async () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-100"
+              className="text-md font-semibold leading-6 text-gray-100"
             >
               {item.name}
             </Link>
@@ -43,14 +43,14 @@ const Navbar = async () => {
             <div className="">
               <Link
                 href="/sign-in"
-                className="text-sm font-semibold leading-6 text-gray-100 mx-4"
+                className="text-md font-semibold leading-6 text-gray-100 mx-4"
               >
                 Log in
                 {/* <span aria-hidden="true">&rarr;</span> */}
               </Link>
               <Link
                 href="/sign-up"
-                className="text-sm font-semibold leading-6 text-gray-100 mx-4"
+                className="text-md font-semibold leading-6 text-gray-100 mx-4"
               >
                 Sign up
               </Link>
