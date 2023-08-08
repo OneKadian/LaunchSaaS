@@ -8,7 +8,7 @@ import Logo from "../Images/logo.png";
 const navigation = [
   { name: "Product", href: "/sign-in" },
   { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
+  { name: "Pricing", href: "#" },
   { name: "Company", href: "#" },
 ];
 
