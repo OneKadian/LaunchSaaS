@@ -10,7 +10,7 @@ const navigation = [
   { name: "Product", href: "/sign-in" },
   { name: "Features", href: "#" },
   { name: "Pricing", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "#" },
 ];
 
 const Navbar = async () => {
