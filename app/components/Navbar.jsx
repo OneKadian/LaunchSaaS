@@ -4,6 +4,7 @@ import { currentUser } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../Images/logo.png";
+import SideMenu from "./SideMenu";
 
 const navigation = [
   { name: "Product", href: "/sign-in" },
@@ -39,25 +40,19 @@ const Navbar = async () => {
           ))}
         </div>
         <div className="lg:flex lg:flex-1 lg:justify-end">
-          {!user ? (
-            <div className="">
+          <div className="flex items-center">
+            {!user ? (
               <Link
                 href="/sign-in"
                 className="text-md font-semibold leading-6 text-gray-100 mx-4"
               >
                 Log in
-                {/* <span aria-hidden="true">&rarr;</span> */}
               </Link>
-              <Link
-                href="/sign-up"
-                className="text-md font-semibold leading-6 text-gray-100 mx-4"
-              >
-                Sign up
-              </Link>
-            </div>
-          ) : (
-            <UserButton afterSignOutUrl="/" />
-          )}
+            ) : (
+              <UserButton afterSignOutUrl="/" className="" />
+            )}
+            <SideMenu className="" />
+          </div>
         </div>
       </nav>
     </header>
