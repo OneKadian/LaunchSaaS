@@ -13,7 +13,7 @@ const navigation = [
   { name: "Product", href: "/sign-in" },
   { name: "Features", href: "#" },
   { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "About", href: "#" },
 ];
 
 const Navbar = () => {
