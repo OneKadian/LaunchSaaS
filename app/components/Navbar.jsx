@@ -7,7 +7,7 @@ import Logo from "../Images/logo.png";
 import SideMenu from "./SideMenu";
 
 const navigation = [
-  { name: "Product", href: "/sign-in" },
+  { name: "Product", href: "#" },
   { name: "Features", href: "#" },
   { name: "Pricing", href: "#" },
   { name: "About", href: "#" },
