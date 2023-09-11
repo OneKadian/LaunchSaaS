@@ -45,7 +45,7 @@ export default function CallToAction() {
           {/* Image section */}
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              className="absolute left-0 top-0 w-[50rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
               src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
               alt="App screenshot"
               width={1824}

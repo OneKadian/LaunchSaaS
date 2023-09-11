@@ -33,7 +33,7 @@ const Navbar = async () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-md font-semibold leading-6 text-gray-100"
+              className="text-lg font-semibold leading-6 text-gray-100"
             >
               {item.name}
             </Link>
@@ -44,7 +44,7 @@ const Navbar = async () => {
             {!user ? (
               <Link
                 href="/sign-in"
-                className="text-md font-semibold leading-6 text-gray-100 mx-4"
+                className="text-lg font-semibold leading-6 text-gray-100 mx-4"
               >
                 Log in
               </Link>
