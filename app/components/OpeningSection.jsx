@@ -1,29 +1,41 @@
 "use client";
 
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { UserButton } from "@clerk/nextjs";
-import { currentUser } from "@clerk/nextjs";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
 export default function OpeningSection() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // Initialize state for minutes and seconds
+  const [minutes, setMinutes] = useState(30);
+  const [seconds, setSeconds] = useState(0);
 
-  // const user = currentUser();
+  // Function to update the countdown
+  const updateCountdown = () => {
+    if (minutes === 0 && seconds === 0) {
+      // Countdown has ended, you can add your desired action here
+      clearInterval(countdownInterval);
+    } else {
+      if (seconds === 0) {
+        setMinutes(minutes - 1);
+        setSeconds(59);
+      } else {
+        setSeconds(seconds - 1);
+      }
+    }
+  };
+
+  // Use useEffect to start the countdown on page load
+  useEffect(() => {
+    const countdownInterval = setInterval(updateCountdown, 1000);
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(countdownInterval);
+  }, [minutes, seconds]); // Add minutes and seconds as dependencies
 
   return (
     <div className="bg-gray-900">
       {/* Navbar */}
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -31,35 +43,50 @@ export default function OpeningSection() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-indigo-600 hover:ring-white">
-              Announcing our next round of funding.{" "}
-              <a href="#" className="font-semibold text-indigo-600">
+              "This is rocket fuel for indie hackers"{" "}
+              <Link href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+                {/* Below is the arrow for suggesting a route */}
+                {/* <span aria-hidden="true">&rarr;</span> */}
+              </Link>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Data to enrich your online business
+              Launch your SaaS in the next <span> </span>
             </h1>
+            <div className="grid grid-flow-col gap-5 text-center auto-cols-max justify-center mt-4">
+              <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <span className="countdown font-mono text-5xl flex justify-center">
+                  <span style={{ "--value": minutes }}></span>
+                </span>
+                minutes
+              </div>
+              <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                <span className="countdown font-mono text-5xl flex justify-center">
+                  <span style={{ "--value": seconds }}></span>
+                </span>
+                seconds
+              </div>
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              The most succesful entrepreneurs on the internet launch and
+              execute fast - and now you can too
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                Launch your idea ➝
               </a>
-              <a
+              {/* Another button without BG */}
+              {/* <a
                 href="#"
                 className="text-sm font-semibold leading-6 text-white"
               >
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
