@@ -4,12 +4,13 @@ import { currentUser } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../Images/logo.png";
+import kadianLogo from "../Images/kadianLogo.png";
 import SideMenu from "./SideMenu";
 
 const navigation = [
   { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Pricing", href: "#" },
+  { name: "Tech Stack", href: "#" },
+  { name: "Roadmap", href: "#" },
   { name: "About", href: "#" },
 ];
 
@@ -25,7 +26,7 @@ const Navbar = async () => {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image className="h-10 w-auto lg:h-11" src={Logo} alt="" />
+            <Image className="h-10 w-auto lg:h-11" src={kadianLogo} alt="" />
           </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
