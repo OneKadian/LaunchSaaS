@@ -78,7 +78,7 @@ const PricingTable = () => {
               Best for those who wish to build fast, fail fast and iterate
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold">$70</span>
+              <span class="mr-2 text-5xl font-extrabold">$80</span>
               {/* For adding per month */}
               <span class="text-gray-500 dark:text-gray-400"></span>
               {/* <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>
