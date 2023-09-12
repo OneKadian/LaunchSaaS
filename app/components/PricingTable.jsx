@@ -25,7 +25,7 @@ const PricingTable = () => {
               Your current situation where the idea is nowhere near Launch
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold">$500</span>
+              <span class="mr-2 text-5xl font-extrabold">$600</span>
               {/* For adding per month */}
               <span class="text-gray-500 dark:text-gray-400"></span>
             </div>
