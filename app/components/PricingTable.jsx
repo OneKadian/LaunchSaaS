@@ -5,7 +5,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const PricingTable = () => {
   return (
     <section class="bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="px-4 mx-auto max-w-screen-xl lg:py-32 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-gray-300 dark:text-white">
             {/* Curated for Geniuses*/}

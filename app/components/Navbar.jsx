@@ -10,7 +10,7 @@ import SideMenu from "./SideMenu";
 const navigation = [
   { name: "Product", href: "#" },
   { name: "Tech Stack", href: "#" },
-  { name: "Roadmap", href: "#" },
+  { name: "Pricing", href: "#" },
   { name: "About", href: "#" },
 ];
 
