@@ -7,12 +7,12 @@ const PricingTable = () => {
     <section class="bg-gray-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-300 dark:text-white">
-            Curated for Geniuses
+          <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-gray-300 dark:text-white">
+            {/* Curated for Geniuses*/}
+            "Don't reinvent the wheel"
           </h2>
           <p class="mb-5 font-light text-gray-300 sm:text-xl dark:text-gray-400">
-            Don't waste time reinventing the wheel. <br />
-            Gain access to boilerplate, templates and roadmaps
+            {/* Don't reinvent the wheel */}
           </p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
@@ -92,7 +92,7 @@ const PricingTable = () => {
               <li class="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
                 <DoneIcon className="text-green-400" />
-                <span>Boiler Plate with clear instructions</span>
+                <span>Boiler Plate with instructions</span>
               </li>
               <li class="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -146,7 +146,7 @@ const PricingTable = () => {
               <li class="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
                 <DoneIcon className="text-green-400" />
-                <span>Boiler Plate with clear instructions</span>
+                <span>Boiler Plate with instructions</span>
               </li>
               <li class="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
