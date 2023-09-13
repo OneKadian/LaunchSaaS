@@ -9,7 +9,7 @@ const PricingTable = () => {
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-gray-300 dark:text-white">
             {/* Curated for Geniuses*/}
-            "Don't reinvent the wheel"
+            Don't reinvent the wheel
           </h2>
           <p class="mb-5 font-light text-gray-300 sm:text-xl dark:text-gray-400">
             {/* Don't reinvent the wheel */}
@@ -53,14 +53,14 @@ const PricingTable = () => {
                 {/* <!-- Icon --> */}
                 <CloseIcon className="text-red-600" />
                 <span>
-                  Outcome: <span class="font-semibold">Burnout</span>
+                  Launch: <span class="font-semibold">Delayed</span>
                 </span>
               </li>
               <li class="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
                 <CloseIcon className="text-red-600" />
                 <span>
-                  Launch: <span class="font-semibold">Delayed</span>
+                  Outcome: <span class="font-semibold">Burnout</span>
                 </span>
               </li>
             </ul>
@@ -129,7 +129,8 @@ const PricingTable = () => {
               LAUNCH
             </a>
           </div>
-          {/* <!-- Pricing Card --> */}
+
+          {/* <!-- Pricing Card 3 --> */}
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-900 rounded-lg border border-gray-300 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 text-white">
             <h3 class="mb-4 text-2xl font-semibold">Pioneer</h3>
             <p class="font-light text-gray-300 sm:text-lg dark:text-gray-400">
