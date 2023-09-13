@@ -54,7 +54,7 @@ const Features = () => {
             Designed for Speed
           </h2>
           <p class="text-gray-300 sm:text-xl dark:text-gray-400">
-            Unleash innovation, save time, and launch swiftly with our solution
+            Unleash innovation, save time, and launch swiftly with our solution.
           </p>
         </div>
         {/* Collection */}
