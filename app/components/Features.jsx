@@ -3,7 +3,7 @@ import nextLogo from "../Images/NextJSLogo.png";
 import stripeLogo from "../Images/stripeLogo.png";
 import supabaseLogo from "../Images/supa.png";
 import tailwindLogo from "../Images/TailwindCSSLogo.png";
-import mailLogo from "../Images/mailLogo.png";
+// import mailLogo from "../Images/mailLogo.png";
 import vercelLogo from "../Images/vercelLogo.png";
 import apiLogo from "../Images/ApiLogo.png";
 
@@ -31,7 +31,7 @@ const Features = () => {
       Image: tailwindLogo,
       Heading: "Tailwind CSS",
       Description:
-        "Utility-first CSS framework for rapid and responsive web development",
+        "Utility-first CSS framework for rapid and responsive development",
     },
     {
       Image: apiLogo,
