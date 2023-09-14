@@ -5,6 +5,7 @@ import supabaseLogo from "../Images/SupabaseLogo.png";
 import tailwindLogo from "../Images/TailwindCSSLogo.png";
 import mailLogo from "../Images/mailLogo.png";
 import vercelLogo from "../Images/vercelLogo.png";
+import apiLogo from "../Images/ApiLogo.png";
 
 const Features = () => {
   const stack = [
@@ -33,11 +34,17 @@ const Features = () => {
         "Utility-first CSS framework for rapid and responsive web development",
     },
     {
-      Image: vercelLogo,
-      Heading: "Vercel",
+      Image: apiLogo,
+      Heading: "API",
       Description:
-        "Cloud platform for seamless SaaS deployment, hosting, and scaling",
+        "Build and scale your SaaS with APIs, using tRPC & RTK query",
     },
+    // {
+    //   Image: vercelLogo,
+    //   Heading: "Vercel",
+    //   Description:
+    //     "Cloud platform for seamless SaaS deployment, hosting, and scaling",
+    // },
     {
       Image: mailLogo,
       Heading: "Mail",
