@@ -12,6 +12,7 @@ const navigation = [
   { name: "Tech Stack", href: "#" },
   { name: "Pricing", href: "#" },
   { name: "About", href: "#" },
+  { name: "Freebies", href: "#" },
 ];
 
 const Navbar = async () => {
