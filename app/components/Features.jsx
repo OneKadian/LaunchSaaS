@@ -1,10 +1,10 @@
 import Image from "next/image";
 import nextLogo from "../Images/NextJSLogo.png";
 import stripeLogo from "../Images/stripeLogo.png";
-// import supabaseLogo from "../Images/SupabaseLogo.png";
+import supabaseLogo from "../Images/SupabaseLogo.png";
 import tailwindLogo from "../Images/TailwindCSSLogo.png";
 import mailLogo from "../Images/mailLogo.png";
-import vercelLogo from "../Images/vercelLogo.png";
+// import vercelLogo from "../Images/vercelLogo.png";
 import apiLogo from "../Images/ApiLogo.png";
 
 const Features = () => {
@@ -22,7 +22,7 @@ const Features = () => {
         "Cutting-edge payment platform for seamless transactions + webhooks ",
     },
     {
-      Image: vercelLogo,
+      Image: supabaseLogo,
       Heading: "Supabase",
       Description:
         "Next-gen open-source database with real-time updates for your SaaS",
