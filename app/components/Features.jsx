@@ -1,7 +1,7 @@
 import Image from "next/image";
 import nextLogo from "../Images/NextJSLogo.png";
 import stripeLogo from "../Images/stripeLogo.png";
-// import supabaseLogo from "../Images/SupabaseLogo.png";
+import supabaseLogo from "../Images/supa.png";
 import tailwindLogo from "../Images/TailwindCSSLogo.png";
 import mailLogo from "../Images/mailLogo.png";
 import vercelLogo from "../Images/vercelLogo.png";
@@ -22,7 +22,7 @@ const Features = () => {
         "Cutting-edge payment platform for seamless transactions + webhooks ",
     },
     {
-      Image: vercelLogo,
+      Image: supabaseLogo,
       Heading: "Supabase",
       Description:
         "Next-gen open-source database with real-time updates for your SaaS",
@@ -39,18 +39,18 @@ const Features = () => {
       Description:
         "Build and scale your SaaS with APIs, using tRPC & RTK query",
     },
-    // {
-    //   Image: vercelLogo,
-    //   Heading: "Vercel",
-    //   Description:
-    //     "Cloud platform for seamless SaaS deployment, hosting, and scaling",
-    // },
     {
-      Image: mailLogo,
-      Heading: "Mail",
+      Image: vercelLogo,
+      Heading: "Vercel",
       Description:
-        "Own your audience with email communication via ConvertKit and Resend",
+        "Cloud platform for seamless SaaS deployment, hosting, and scaling",
     },
+    // {
+    //   Image: mailLogo,
+    //   Heading: "Mail",
+    //   Description:
+    //     "Own your audience with email communication via ConvertKit and Resend",
+    // },
   ];
 
   return (
