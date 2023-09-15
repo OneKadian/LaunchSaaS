@@ -1,4 +1,4 @@
-const FooterItems = ["Mail", "Twitter", "LinkedIn"];
+const FooterItems = ["LinkedIn", "Mail", "Twitter"];
 
 const Footer = () => {
   return (
