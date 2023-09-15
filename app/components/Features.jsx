@@ -3,7 +3,7 @@ import nextLogo from "../Images/NextJSLogo.png";
 import stripeLogo from "../Images/stripeLogo.png";
 import supabaseLogo from "../Images/supa.png";
 import tailwindLogo from "../Images/TailwindCSSLogo.png";
-// import mailLogo from "../Images/mailLogo.png";
+import mailLogo from "../Images/mailLogo.png";
 import vercelLogo from "../Images/vercelLogo.png";
 import apiLogo from "../Images/ApiLogo.png";
 
@@ -33,24 +33,24 @@ const Features = () => {
       Description:
         "Utility-first CSS framework for rapid and responsive development",
     },
-    {
-      Image: apiLogo,
-      Heading: "API",
-      Description:
-        "Build and scale your SaaS with APIs, using tRPC & RTK query",
-    },
+    // {
+    //   Image: apiLogo,
+    //   Heading: "API",
+    //   Description:
+    //     "Build and scale your SaaS with APIs, using tRPC & RTK query",
+    // },
     {
       Image: vercelLogo,
       Heading: "Vercel",
       Description:
         "Cloud platform for seamless SaaS deployment, hosting, and scaling",
     },
-    // {
-    //   Image: mailLogo,
-    //   Heading: "Mail",
-    //   Description:
-    //     "Own your audience with email communication via ConvertKit and Resend",
-    // },
+    {
+      Image: mailLogo,
+      Heading: "Mail",
+      Description:
+        "Own your audience with email communication via ConvertKit and Resend",
+    },
   ];
 
   return (

@@ -33,7 +33,7 @@ const Frequently = () => {
     {
       Question: "Is it really possible to launch in 30 minutes?",
       Answer:
-        "Yes and No. Yes, if you have an idea and are ready to launch with a landing page ASAP to validate and, No if you plan to build the perfect product before launching :)",
+        "Yes and No. Yes, if you have an idea and are ready to launch with a landing page followed by an MVP and, No if you plan to build the perfect product before launching :)",
     },
     {
       Question: "What if my question is not listed here",
@@ -50,7 +50,7 @@ const Frequently = () => {
             <h2 className="mb-4 text-2xl tracking-tight font-extrabold text-white text-center lg:text-3xl">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-300 sm:text-xl">
+            <p className="text-gray-300 sm:text-xl text-center">
               Unlock your Launch potential, Discover more about OneKadian
             </p>
           </div>

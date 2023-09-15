@@ -1,14 +1,8 @@
-const FooterItems = [
-  "Privacy Policy",
-  "Pricing",
-  "Product",
-  "Twitter",
-  "LinkedIn",
-];
+const FooterItems = ["Privacy Policy", "T&C", "Mail", "Twitter", "LinkedIn"];
 
 const Footer = () => {
   return (
-    <footer class="p-4 bg-gray-900 md:p-8 lg:p-10">
+    <footer class="p-4 bg-gray-900 mt-12 md:p-8 lg:p-10">
       <div className="mx-auto max-w-screen-xl text-center">
         <a
           // href="#"
