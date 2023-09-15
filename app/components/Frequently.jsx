@@ -13,18 +13,18 @@ const Frequently = () => {
     {
       Question: "How do I get started?",
       Answer:
-        "Choose a plan, get access to the boilerplate with the instruction video, put in your keys, follow the roadmap and Launch!",
+        "Choose a plan, get access to the resources with the instruction video, put in your keys, follow the roadmap and Launch!",
     },
     {
       Question: "What all do I get?",
       Answer:
         "OneKadian is a combination of a boilerplate with launch instructions, templates, resource sheet, roadmaps and a subscription to the newsletter",
     },
-    {
-      Question: "Is the stack open to change?",
-      Answer:
-        "Definitely! I'm open to change, if I find something new and better, I'll use that. If you have a different stack, that won't be a problem too",
-    },
+    // {
+    //   Question: "Is the stack open to change?",
+    //   Answer:
+    //     "Definitely! I'm open to change, if I find something new and better, I'll use that. If you have a different stack, that won't be a problem too",
+    // },
     {
       Question: "How often do I get updates?",
       Answer:
@@ -33,7 +33,7 @@ const Frequently = () => {
     {
       Question: "Is it really possible to launch in 30 minutes?",
       Answer:
-        "Yes and No. Yes, if you have and idea what to build and are ready to launch with a landing page ASAP to validate and no if you plan to build the perfect product before launching :)",
+        "Yes and No. Yes, if you have an idea and are ready to launch with a landing page ASAP to validate and, No if you plan to build the perfect product before launching :)",
     },
     {
       Question: "What if my question is not listed here",
@@ -43,15 +43,15 @@ const Frequently = () => {
   ];
 
   return (
-    <section className="bg-gray-900">
-      <div className="py-32 px-4 mx-auto max-w-screen-xl lg:px-6">
+    <section className="bg-gray-900 lg:py-32">
+      <div className="px-4 mx-auto max-w-screen-xl lg:px-6">
         <div className="flex justify-center">
           <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white text-center">
-              F A Q
+            <h2 className="mb-4 text-2xl tracking-tight font-extrabold text-white text-center lg:text-3xl">
+              Frequently Asked Questions
             </h2>
-            <p className="text-gray-300 sm:text-xl dark:text-gray-400">
-              Frequently asked questions
+            <p className="text-gray-300 sm:text-xl">
+              Unlock your Launch potential, Discover more about OneKadian
             </p>
           </div>
         </div>

@@ -60,7 +60,7 @@ const Features = () => {
           <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white">
             Designed for Speed
           </h2>
-          <p class="text-gray-300 sm:text-xl dark:text-gray-400">
+          <p class="text-gray-300 sm:text-xl">
             Unleash innovation, save time, and launch swiftly with our solution.
           </p>
         </div>
@@ -77,10 +77,8 @@ const Features = () => {
                   height={40}
                 />
               </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">
-                {st.Heading}
-              </h3>
-              <p class="text-gray-300 dark:text-gray-400">{st.Description}</p>
+              <h3 class="mb-2 text-xl font-bold">{st.Heading}</h3>
+              <p class="text-gray-300">{st.Description}</p>
             </div>
           ))}
         </div>
