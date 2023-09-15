@@ -9,9 +9,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Product", href: "/sign-in" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Pricing", href: "#" },
+  { name: "About", href: "#" },
 ];
 
 const SideMenu = () => {
