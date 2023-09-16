@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Frequently from "./components/Frequently.jsx";
 
 export default function Home() {
+  // Please comment and import the components you wish to use / not use here
   return (
     <>
       <OpeningSection />

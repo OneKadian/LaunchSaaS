@@ -1,0 +1,16 @@
+Step 1: cd SaaS and run npm install 
+
+Step 2: Get your keys from clerk and put them into env.local to activate authentication
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+
+Step 3: Make all the necessary changes to the components with your information, adding a working form to fetch leads is recommended
+
+Step 4: Add to github, deploy on vercel make sure to add the env.local into settings>environment variables
+
+Step 5: Launch and tag me @OneKadian to make me happy. 
