@@ -6,6 +6,9 @@ import kadianLogo from "../Images/kadianLogo.png";
 import SideMenu from "./SideMenu";
 import NavElements from "./NavElements";
 
+// Navbar is not sticky, pulls elements from NavElements and Sidemenu
+// Navbar is not client because we need the async await for clerk userButton, do not import the sidemenu or navElements here
+
 const Navbar = async () => {
   const user = await currentUser();
 
@@ -18,23 +21,15 @@ const Navbar = async () => {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
+            {/* Your Logo */}
             <Image className="h-10 w-auto lg:h-11" src={kadianLogo} alt="" />
           </Link>
         </div>
-        {/* <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-lg font-semibold leading-6 text-gray-100"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div> */}
+        {/* Navbar elements */}
         <NavElements />
         <div className="lg:flex lg:flex-1 lg:justify-end">
           <div className="flex items-center">
+            {/* Clerk user button based on cookies */}
             {!user ? (
               <Link
                 href="/sign-in"
@@ -45,6 +40,7 @@ const Navbar = async () => {
             ) : (
               <UserButton afterSignOutUrl="/" className="" />
             )}
+            {/* Side menu for mobile */}
             <SideMenu className="" />
           </div>
         </div>

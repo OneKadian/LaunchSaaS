@@ -2,6 +2,8 @@ import React from "react";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 
+// 3 price tiers, will try to add monthly annual toggle and buy on Stripe / Gumroad button
+
 const PricingTable = () => {
   return (
     <section class="bg-gray-900">

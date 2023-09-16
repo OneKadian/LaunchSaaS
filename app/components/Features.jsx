@@ -5,7 +5,8 @@ import supabaseLogo from "../Images/supa.png";
 import tailwindLogo from "../Images/TailwindCSSLogo.png";
 import mailLogo from "../Images/mailLogo.png";
 import vercelLogo from "../Images/vercelLogo.png";
-import apiLogo from "../Images/ApiLogo.png";
+
+// Show all your features with this section, I use it to show my Tech stack
 
 const Features = () => {
   const stack = [
@@ -33,12 +34,6 @@ const Features = () => {
       Description:
         "Utility-first CSS framework for rapid and responsive development",
     },
-    // {
-    //   Image: apiLogo,
-    //   Heading: "API",
-    //   Description:
-    //     "Build and scale your SaaS with APIs, using tRPC & RTK query",
-    // },
     {
       Image: vercelLogo,
       Heading: "Vercel",

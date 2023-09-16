@@ -8,6 +8,7 @@ import Logo from "../Images/logo.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 //  Don't forget to add the href as an id to the desired section my friend!
+// Menu for mobile, not visible on PC
 
 const navigation = [
   { name: "Pricing", href: "#pricing-section" },

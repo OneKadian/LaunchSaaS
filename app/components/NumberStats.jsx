@@ -1,5 +1,7 @@
 import React from "react";
 
+// Show some numeric stats to your users
+
 const NumberStats = () => {
   return (
     <div class="bg-gray-900 py-24 sm:py-32">

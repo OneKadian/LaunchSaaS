@@ -1,3 +1,5 @@
+// Super important section, update the array to change q and a
+
 const Frequently = () => {
   const Questions = [
     {
@@ -20,11 +22,6 @@ const Frequently = () => {
       Answer:
         "OneKadian is a combination of a boilerplate with launch instructions, templates, resource sheet, roadmaps and a subscription to the newsletter",
     },
-    // {
-    //   Question: "Is the stack open to change?",
-    //   Answer:
-    //     "Definitely! I'm open to change, if I find something new and better, I'll use that. If you have a different stack, that won't be a problem too",
-    // },
     {
       Question: "How often do I get updates?",
       Answer:

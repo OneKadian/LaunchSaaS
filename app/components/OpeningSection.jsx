@@ -1,5 +1,7 @@
 "use client";
 
+// Hero section, define your product with what it can do and offer a CTA button
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -80,13 +82,6 @@ export default function OpeningSection() {
               >
                 Launch your idea ➝
               </a>
-              {/* Another button without BG */}
-              {/* <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-white"
-              >
-                Learn more <span aria-hidden="true">→</span>
-              </a> */}
             </div>
           </div>
         </div>

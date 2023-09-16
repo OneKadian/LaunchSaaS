@@ -4,6 +4,9 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
+// Quickly show your 3 best uses with this section, my future plan to build this would be:
+// click on the feature, see the image change or it changes automatically every few seconds
+
 const features = [
   {
     name: "Push to deploy: ",

@@ -1,4 +1,5 @@
 export default function CallToAction() {
+  // Call to Action section
   return (
     <div className="bg-gray-900">
       <div className="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8">
