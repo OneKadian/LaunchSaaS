@@ -55,7 +55,10 @@ const Features = () => {
 
   return (
     <section class="bg-gray-900">
-      <div class="py-32 px-4 mx-auto max-w-screen-xl lg:px-6">
+      <div
+        class="py-32 px-4 mx-auto max-w-screen-xl lg:px-6"
+        id="stack-section"
+      >
         <div class="max-w-screen-md mb-8 lg:mb-16">
           <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white">
             Designed for Speed

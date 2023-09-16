@@ -6,7 +6,10 @@ const PricingTable = () => {
   return (
     <section class="bg-gray-900">
       <div class="px-4 mx-auto max-w-screen-xl lg:py-32 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <div
+          class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12"
+          id="pricing-section"
+        >
           <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white">
             {/* Curated for Geniuses*/}
             Pricing

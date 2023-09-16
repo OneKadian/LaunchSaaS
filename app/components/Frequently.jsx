@@ -44,7 +44,7 @@ const Frequently = () => {
 
   return (
     <section className="bg-gray-900 py-12 lg:py-32">
-      <div className="px-4 mx-auto max-w-screen-xl lg:px-6">
+      <div className="px-4 mx-auto max-w-screen-xl lg:px-6" id="faq-section">
         <div className="flex justify-center">
           <div className="max-w-screen-md mb-8 lg:mb-16">
             <h2 className="mb-4 text-2xl tracking-tight font-extrabold text-white text-center lg:text-3xl">
