@@ -7,16 +7,25 @@ import Image from "next/image";
 import Logo from "../Images/logo.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+//  Don't forget to add the href as an id to the desired section my friend!
+
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "About", href: "#" },
+  { name: "Pricing", href: "#pricing-section" },
+  { name: "Stack", href: "#stack-section" },
+  { name: "FAQ", href: "#faq-section" },
 ];
 
 const SideMenu = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const [user, setUser] = useState(null);
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="">
@@ -58,13 +67,14 @@ const SideMenu = () => {
             <div className="-my-6 divide-y divide-gray-500/10 ">
               <div className="space-y-2 py-6 ">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
+                    onClick={(e) => handleScroll(e, item.href.substring(1))}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:text-white"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

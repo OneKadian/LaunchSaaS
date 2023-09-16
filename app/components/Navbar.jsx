@@ -1,17 +1,10 @@
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../Images/logo.png";
 import kadianLogo from "../Images/kadianLogo.png";
 import SideMenu from "./SideMenu";
-
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "About", href: "#" },
-];
+import NavElements from "./NavElements";
 
 const Navbar = async () => {
   const user = await currentUser();
@@ -28,7 +21,7 @@ const Navbar = async () => {
             <Image className="h-10 w-auto lg:h-11" src={kadianLogo} alt="" />
           </Link>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        {/* <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -38,7 +31,8 @@ const Navbar = async () => {
               {item.name}
             </Link>
           ))}
-        </div>
+        </div> */}
+        <NavElements />
         <div className="lg:flex lg:flex-1 lg:justify-end">
           <div className="flex items-center">
             {!user ? (
