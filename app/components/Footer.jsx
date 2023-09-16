@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const FooterItems = ["LinkedIn", "Mail", "Twitter", "Legal"];
 
 // Update the array above, limit to 4 for better ux and you have a footer ready
