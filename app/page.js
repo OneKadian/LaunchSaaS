@@ -8,12 +8,14 @@ import Features from "./components/Features";
 import ContactUsForm from "./components/ContactUsForm";
 import Footer from "./components/Footer";
 import Frequently from "./components/Frequently.jsx";
+import Hotkey from "./components/Hotkey";
 
 export default function Home() {
   // Please comment and import the components you wish to use / not use here
   return (
     <>
       <OpeningSection />
+      <Hotkey />
       <FeaturedSection />
       {/* <CallToAction /> */}
       <PricingTable />
