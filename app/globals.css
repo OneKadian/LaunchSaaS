@@ -39,3 +39,8 @@ width: 2.5rem;
   }
 }
 
+/* Remove gumroad cart from top right */
+
+/* .gumroad .cart-button {
+  display: none !important;
+} */

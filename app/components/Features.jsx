@@ -75,7 +75,7 @@ const Features = () => {
                   height={40}
                 />
               </div>
-              <h3 class="mb-2 text-xl font-bold">{st.Heading}</h3>
+              <h3 class="text-gray-300 mb-2 text-xl font-bold">{st.Heading}</h3>
               <p class="text-gray-300">{st.Description}</p>
             </div>
           ))}

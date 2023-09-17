@@ -41,6 +41,15 @@ const Navbar = async () => {
               <UserButton afterSignOutUrl="/" className="" />
             )} */}
             {/* Side menu for mobile */}
+            <div className="hidden bg-black rounded-lg lg:block">
+              <p class="text-gray-300 p-2">
+                Press{" "}
+                <kbd class="px-2 py-1 text-md font-semibold text-black bg-gray-100 border border-gray-200 rounded-lg">
+                  1
+                </kbd>{" "}
+                anytime to buy
+              </p>
+            </div>
             <SideMenu className="" />
           </div>
         </div>
