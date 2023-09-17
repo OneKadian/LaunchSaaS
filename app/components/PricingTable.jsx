@@ -126,11 +126,18 @@ const PricingTable = () => {
                 </span>
               </li>
             </ul>
-            <a
+            {/* <a
               href="#"
               class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
               LAUNCH
+            </a> */}
+            {/* <script src="https://gumroad.com/js/gumroad.js"></script> */}
+            <a
+              class="gumroad-button"
+              href="https://anirudhkadian1.gumroad.com/l/vezcsg"
+            >
+              Buy on
             </a>
           </div>
 
@@ -181,11 +188,18 @@ const PricingTable = () => {
                 </span>
               </li>
             </ul>
-            <a
+            {/* <a
               href="#"
               class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
               LAUNCH
+            </a> */}
+            <script src="https://gumroad.com/js/gumroad.js"></script>
+            <a
+              class="gumroad-button"
+              href="https://anirudhkadian1.gumroad.com/l/ewqdo"
+            >
+              Buy on
             </a>
           </div>
         </div>
