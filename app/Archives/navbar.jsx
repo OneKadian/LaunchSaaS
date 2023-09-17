@@ -199,3 +199,37 @@ export default Navbar;
     )}
   </div>
 </nav>;
+
+// HOTKEY
+const Hotkey = () => {
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "1") {
+        // Redirect to the Gumroad URL
+        window.location.href = "https://anirudhkadian1.gumroad.com/";
+      }
+    };
+
+    // Add the event listener when the component mounts
+    window.addEventListener("keydown", handleKeyPress);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
+  return (
+    <div className="hidden bg-black rounded-lg lg:block">
+      <p class="text-gray-300 p-2">
+        Press{" "}
+        <kbd class="px-2 py-1 text-md font-semibold text-black bg-gray-100 border border-gray-200 rounded-lg">
+          1
+        </kbd>{" "}
+        anytime to buy
+      </p>
+    </div>
+  );
+};
+
+// export default Hotkey;

@@ -5,6 +5,7 @@ import Image from "next/image";
 import kadianLogo from "../Images/kadianLogo.png";
 import SideMenu from "./SideMenu";
 import NavElements from "./NavElements";
+import Hotkey from "./Hotkey";
 
 // Navbar is not sticky, pulls elements from NavElements and Sidemenu
 // Navbar is not client because we need the async await for clerk userButton, do not import the sidemenu or navElements here
@@ -13,7 +14,7 @@ const Navbar = async () => {
   const user = await currentUser();
 
   return (
-    <header className="absolute inset-x-0 top-0 z-5">
+    <header className="absolute inset-x-0 top-0 z-5 h-max">
       <nav
         className="flex items-center justify-between p-6 lg:px-8 bg-gray-900"
         aria-label="Global"
@@ -29,7 +30,7 @@ const Navbar = async () => {
         <NavElements />
         <div className="lg:flex lg:flex-1 lg:justify-end">
           <div className="flex items-center">
-            {/* Clerk user button based on cookies */}
+            {/* Clerk user button based on cookies, Login button */}
             {/* {!user ? (
               <Link
                 href="/sign-in"
@@ -40,16 +41,9 @@ const Navbar = async () => {
             ) : (
               <UserButton afterSignOutUrl="/" className="" />
             )} */}
+            {/* <Hotkey /> */}
+
             {/* Side menu for mobile */}
-            <div className="hidden bg-black rounded-lg lg:block">
-              <p class="text-gray-300 p-2">
-                Press{" "}
-                <kbd class="px-2 py-1 text-md font-semibold text-black bg-gray-100 border border-gray-200 rounded-lg">
-                  1
-                </kbd>{" "}
-                anytime to buy
-              </p>
-            </div>
             <SideMenu className="" />
           </div>
         </div>
