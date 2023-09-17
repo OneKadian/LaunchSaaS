@@ -30,7 +30,7 @@ const Navbar = async () => {
         <div className="lg:flex lg:flex-1 lg:justify-end">
           <div className="flex items-center">
             {/* Clerk user button based on cookies */}
-            {!user ? (
+            {/* {!user ? (
               <Link
                 href="/sign-in"
                 className="text-lg font-semibold leading-6 text-gray-100 mx-4"
@@ -39,7 +39,7 @@ const Navbar = async () => {
               </Link>
             ) : (
               <UserButton afterSignOutUrl="/" className="" />
-            )}
+            )} */}
             {/* Side menu for mobile */}
             <SideMenu className="" />
           </div>
