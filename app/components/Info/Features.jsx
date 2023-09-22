@@ -1,10 +1,10 @@
 import Image from "next/image";
-import nextLogo from "../Images/NextJSLogo.png";
-import stripeLogo from "../Images/stripeLogo.png";
-import supabaseLogo from "../Images/supa.png";
-import tailwindLogo from "../Images/TailwindCSSLogo.png";
-import mailLogo from "../Images/mailLogo.png";
-import vercelLogo from "../Images/vercelLogo.png";
+import nextLogo from "../../Images/NextJSLogo.png";
+import stripeLogo from "../../Images/stripeLogo.png";
+import supabaseLogo from "../../Images/supa.png";
+import tailwindLogo from "../../Images/TailwindCSSLogo.png";
+import mailLogo from "../../Images/mailLogo.png";
+import vercelLogo from "../../Images/vercelLogo.png";
 
 // Show all your features with this section, I use it to show my Tech stack
 
@@ -51,11 +51,12 @@ const Features = () => {
   return (
     <section class="bg-gray-900">
       <div
-        class="py-32 px-4 mx-auto max-w-screen-xl lg:px-6"
+        class="py-24 px-4 mx-auto max-w-screen-xl lg:px-6 lg:py-32"
         id="stack-section"
       >
         <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white">
+          {/* <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white"> */}
+          <h2 class="text-4xl sm:text-3xl font-semibold sm:leading-[55px] sm:tracking-tight">
             Designed for Speed
           </h2>
           <p class="text-gray-300 sm:text-xl">
