@@ -3,7 +3,7 @@ const ContactUsForm = () => {
     // Contact Us form
     // Form not attached to any database, function, hence submit button does nothing
     <section class="bg-gray-900">
-      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <div class="py-24 lg:py-32 px-4 mx-auto max-w-screen-md">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
           Contact Us
         </h2>

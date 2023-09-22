@@ -2,10 +2,10 @@ import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
-import kadianLogo from "../Images/kadianLogo.png";
+import kadianLogo from "../../Images/kadianLogo.png";
 import SideMenu from "./SideMenu";
 import NavElements from "./NavElements";
-import Hotkey from "./Hotkey";
+import Hotkey from "../Extras/Hotkey";
 
 // Navbar is not sticky, pulls elements from NavElements and Sidemenu
 // Navbar is not client because we need the async await for clerk userButton, do not import the sidemenu or navElements here

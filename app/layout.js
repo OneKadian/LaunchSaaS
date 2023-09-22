@@ -2,7 +2,7 @@ import "./globals.css";
 import { ClerkProvider, UserProfile } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import { Montserrat } from "next/font/google";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navigation/Navbar";
 
 const inter = Montserrat({ subsets: ["latin"] });
 

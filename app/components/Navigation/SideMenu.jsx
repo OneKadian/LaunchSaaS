@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../Images/logo.png";
+import Logo from "../../Images/logo.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 //  Don't forget to add the href as an id to the desired section my friend!
