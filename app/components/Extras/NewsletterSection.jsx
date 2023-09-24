@@ -8,12 +8,13 @@ export default function NewsletterSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Subscribe to our newsletter.
+            {/* <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl"> */}
+            <h2 className="text-3xl lg:text-4xl mb-2 font-semibold sm:leading-[55px] sm:tracking-tight">
+              Subscribe to the newsletter
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
-              velit quis. Duis tempor incididunt dolore.
+              Get a collection of resources, research or product updates
+              delivered to your inbox once a week
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -38,31 +39,36 @@ export default function NewsletterSection() {
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
             <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <CalendarDaysIcon
-                  className="h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
+              <div className="flex">
+                <div className="rounded-md mr-4 bg-white/5 p-2 ring-1 ring-white/10">
+                  <CalendarDaysIcon
+                    className="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
+                </div>
+                <dt className="flex justify-center items-center font-semibold text-sm text-white">
+                  Weekly articles
+                </dt>
               </div>
-              <dt className="mt-4 font-semibold text-sm text-white">
-                Weekly articles
-              </dt>
               <dd className="mt-2 leading-7 text-gray-300">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure
-                cupidatat duis commodo amet.
+                One day of delivery, seven days of action. Keep that fire
+                burning
               </dd>
             </div>
             <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <HandRaisedIcon
-                  className="h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
+              <div className="flex">
+                <div className="rounded-md mr-4 bg-white/5 p-2 ring-1 ring-white/10">
+                  <HandRaisedIcon
+                    className="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
+                </div>
+                <dt className="flex justify-center items-center font-semibold text-white">
+                  No Spam
+                </dt>
               </div>
-              <dt className="mt-4 font-semibold text-white">No spam</dt>
               <dd className="mt-2 leading-7 text-gray-300">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
+                Delivering spam free, value packed insights to your inbox
               </dd>
             </div>
           </dl>

@@ -43,12 +43,12 @@ const Frequently = () => {
     <section className="bg-gray-900 py-12 lg:py-32">
       <div className="px-4 mx-auto max-w-screen-xl lg:px-6" id="faq-section">
         <div className="flex justify-center">
-          <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 class="text-3xl text-center lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight">
-              Frequently Asked Questions
+          <div className="max-w-screen-md mb-8 lg:mb-16 p-2">
+            <h2 class="text-3xl text-center mb-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight">
+              FAQ
             </h2>
             <p className="text-gray-300 mt-4 text-lg text-center">
-              Unlock your Launch potential, Discover more about OneKadian
+              Discover more about OneKadian
             </p>
           </div>
         </div>

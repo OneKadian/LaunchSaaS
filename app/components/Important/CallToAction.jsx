@@ -6,12 +6,15 @@ export default function CallToAction() {
         <div className="relative overflow-hidden bg-gray-900 px-6 pt-16  sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           {/* Text section */}
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-white">
-              Boost your productivity.
+            {/* <h2 className="text-3xl font-bold tracking-tight text-white p-2"> */}
+            <h2 className="text-3xl lg:text-4xl mb-2 font-semibold sm:leading-[55px] sm:tracking-tight">
+              {" "}
+              End your delay
               <br />
-              Start using our app today.
+              Launch your idea today
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            {/* <p className="mt-6 text-lg leading-8 text-gray-300"> */}
+            <p className="mb-5 font-light text-gray-300 sm:text-xl">
               Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
               Malesuada adipiscing sagittis vel nulla.
             </p>
