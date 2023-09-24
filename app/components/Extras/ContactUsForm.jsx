@@ -4,12 +4,13 @@ const ContactUsForm = () => {
     // Form not attached to any database, function, hence submit button does nothing
     <section class="bg-gray-900">
       <div class="py-24 lg:py-32 px-4 mx-auto max-w-screen-md">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
+        {/* <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white"> */}
+        <h2 class="text-3xl text-center lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight mb-4">
           Contact Us
         </h2>
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">
-          Got a technical issue? Want to send feedback about a beta feature?
-          Need details about our Business plan? Let us know.
+          Got an issue? Want to send feedback? <br></br>
+          I'm one message away
         </p>
         <form action="#" class="space-y-8">
           <div>

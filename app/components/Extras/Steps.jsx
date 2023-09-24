@@ -24,18 +24,18 @@ const stepArray = [
 
 const Steps = () => {
   return (
-    <div class=" bg-gray-900 py-24 lg:py-32">
+    <div class=" bg-gray-900 py-8">
       <div class="text-center">
         {/* <h2 class="text-4xl sm:text-5xl font-semibold sm:leading-[55px] sm:tracking-tight"> */}
-        <h2 class="text-4xl sm:text-3xl font-semibold sm:leading-[55px] sm:tracking-tight">
-          Your 3 step Launch
+        <h2 class="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight">
+          Launch in 3 Steps
         </h2>
-        <p class="text-gray-300 sm:text-xl">
+        <p class="text-gray-300 text-xl p-2">
           Launching a Saas doesn't get any simpler than this
         </p>
       </div>
       <div class="mx-4 my-8 sm:mx-8 sm:my-10">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="p-2 grid grid-cols-1 lg:grid-cols-3 gap-4 item">
           {stepArray.map((step) => (
             <div class="flex flex-col p-8 bg-gray-800 rounded-xl border border-gray-700">
               <div class="flex items-center pb-4">
