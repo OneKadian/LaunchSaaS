@@ -104,7 +104,7 @@ const PriceTable2 = () => {
   return (
     <div className="bg-gray-900 py-24 lg:py-32">
       <div className="space-y-3 mb-12 text-center p-2">
-        <h2 className="text-3xl lg:text-4xl mb-2 font-semibold sm:leading-[55px] sm:tracking-tight">
+        <h2 className="text-3xl lg:text-4xl mb-2 font-semibold text-white sm:leading-[55px] sm:tracking-tight">
           Pricing
         </h2>
         <p className="mb-5 font-light text-gray-300 sm:text-xl">
@@ -118,9 +118,13 @@ const PriceTable2 = () => {
               key={index}
               className="bg-gray-800 border border-gray-700 flex flex-col p-6 text-center rounded-xl min-h-[500px] justify-center"
             >
-              <h3 className="mb-4 text-3xl font-medium">{price.title}</h3>
+              <h3 className="mb-4 text-3xl text-white font-medium">
+                {price.title}
+              </h3>
               <div className="flex justify-center items-baseline mb-8">
-                <span className="text-5xl font-bold">{price.price}</span>
+                <span className="text-5xl text-gray-100 font-bold">
+                  {price.price}
+                </span>
                 {/* Monthly pricing? just uncomment this span below */}
                 {/* <span className="text-xl font-semibold text-gray-300">
                   {price.per}
@@ -130,7 +134,7 @@ const PriceTable2 = () => {
                 {price.features.map((feature, featureIndex) => (
                   <li
                     key={featureIndex}
-                    className="flex items-center space-x-3"
+                    className="flex items-center space-x-3 text-gray-300"
                   >
                     {feature.Icon} {/* Use the predefined icon */}
                     <span>{feature.text}</span>

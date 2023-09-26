@@ -57,7 +57,7 @@ const Features = () => {
         <div class="max-w-screen-md mb-8 p-2 lg:mb-16">
           {/* <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white"> */}
           {/* <h2 class="text-4xl sm:text-3xl font-semibold sm:leading-[55px] sm:tracking-tight"> */}
-          <h2 className="text-3xl lg:text-4xl mb-2 font-semibold sm:leading-[55px] sm:tracking-tight">
+          <h2 className="text-3xl lg:text-4xl mb-2 font-semibold text-white sm:leading-[55px] sm:tracking-tight">
             Designed for Speed
           </h2>
           <p class="text-gray-300 sm:text-xl">
