@@ -27,7 +27,7 @@ const Steps = () => {
     <div class=" bg-gray-900 py-8">
       <div class="text-center">
         {/* <h2 class="text-4xl sm:text-5xl font-semibold sm:leading-[55px] sm:tracking-tight"> */}
-        <h2 class="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight">
+        <h2 class="text-3xl p-2 lg:text-4xl font-semibold text-white sm:leading-[55px] sm:tracking-tight">
           Launch in 3 Steps
         </h2>
         <p class="text-gray-300 text-xl p-2">

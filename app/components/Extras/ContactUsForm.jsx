@@ -5,7 +5,7 @@ const ContactUsForm = () => {
     <section class="bg-gray-900">
       <div class="py-24 lg:py-32 px-4 mx-auto max-w-screen-md">
         {/* <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white"> */}
-        <h2 class="text-3xl text-center lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight mb-4">
+        <h2 class="text-3xl text-center lg:text-4xl text-white font-semibold sm:leading-[55px] sm:tracking-tight mb-4">
           Contact Us
         </h2>
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">

@@ -107,7 +107,7 @@ const PricingTable = () => {
           className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12"
           id="pricing-section"
         >
-          <h2 className="text-3xl sm:text-4xl p-2 font-semibold sm:leading-[55px] sm:tracking-tight">
+          <h2 className="text-3xl sm:text-4xl p-2 font-semibold text-white sm:leading-[55px] sm:tracking-tight">
             Pricing
           </h2>
           <p className="mb-5 font-light text-gray-300 sm:text-xl">

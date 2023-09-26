@@ -39,7 +39,7 @@ export default function FeaturedSection() {
                 Deploy faster
               </h2> */}
               {/* <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"> */}
-              <h2 class="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight">
+              <h2 class="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight text-white">
                 A better workflow
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
