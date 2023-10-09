@@ -10,6 +10,13 @@ export default function OpeningSection() {
   const [minutes, setMinutes] = useState(30);
   const [seconds, setSeconds] = useState(0);
 
+  const openingCopy = {
+    announcementText: "This is rocket fuel for indie hackers",
+    titleText: "Launch your SaaS in the next",
+    subtitleText:
+      "The most succesful entrepreneurs on the internet launch and execute fast - and now you can too",
+  };
+
   // Function to update the countdown
   const updateCountdown = () => {
     if (minutes === 0 && seconds === 0) {
@@ -38,14 +45,10 @@ export default function OpeningSection() {
       {/* Navbar */}
 
       <div className="relative isolate px-6 lg:px-8">
-        {/* <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        ></div> */}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:pb-24 pt-48">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-indigo-600 hover:ring-white">
-              "This is rocket fuel for indie hackers"{" "}
+              "{openingCopy.announcementText}"{" "}
               <Link href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 {/* Below is the arrow for suggesting a route */}
@@ -55,7 +58,7 @@ export default function OpeningSection() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Launch your SaaS in the next <span> </span>
+              {openingCopy.titleText} <span> </span>
             </h1>
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max justify-center mt-4">
               <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
@@ -72,8 +75,7 @@ export default function OpeningSection() {
               </div>
             </div>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              The most succesful entrepreneurs on the internet launch and
-              execute fast - and now you can too
+              {openingCopy.subtitleText}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

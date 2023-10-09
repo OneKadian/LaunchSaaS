@@ -1,30 +1,34 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import SpeedIcon from "@mui/icons-material/Speed";
 
 // Quickly show your 3 best uses with this section, my future plan to build this would be:
 // click on the feature, see the image change or it changes automatically every few seconds
 
+const featuredCopy = {
+  featuredHeading: "Share Products not Ideas",
+  featuredDescription:
+    "You've read enough books, seen enough videos and followed enough founders, Its Time to build! ",
+};
+
 const features = [
   {
-    name: "Push to deploy: ",
+    name: "Turn Ideas into Reality",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CloudArrowUpIcon,
+      "Leave procrastination behind, Execute your ideas and see them come to life.",
+    icon: RocketLaunchIcon,
   },
   {
-    name: "SSL certificates: ",
+    name: "Instant Launch",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Save time and effort with our ready-to-use components and launch instructions.",
+    icon: SpeedIcon,
   },
   {
-    name: "Database backups: ",
+    name: "Validation and Scaling",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ServerIcon,
+      "Avoid overthinking and Launch fast, Validate your ideas and scale your SaaS venture.",
+    icon: TrendingUpIcon,
   },
 ];
 
@@ -40,22 +44,20 @@ export default function FeaturedSection() {
               </h2> */}
               {/* <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"> */}
               <h2 class="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight text-white">
-                A better workflow
+                {featuredCopy.featuredHeading}
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+                {featuredCopy.featuredDescription}
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-white">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-indigo-300"
                         aria-hidden="true"
                       />
-                      {feature.name}
+                      {feature.name}:
                     </dt>{" "}
                     <dd className="inline">{feature.description}</dd>
                   </div>

@@ -12,14 +12,16 @@ import Hotkey from "./components/Extras/Hotkey";
 import Testimanual from "./components/Extras/Testimanual";
 import PriceTable2 from "./components/Pricing/PriceTable2";
 import Steps from "./components/Extras/Steps";
+import Feta from "./components/Info/Feta";
 
 export default function Home() {
-  // Please comment and import the components you wish to use / not use here
+  // Please comment out and import the components you wish to use / not use here
   return (
     <>
       <OpeningSection />
       <Hotkey />
       <FeaturedSection />
+      <Feta />
       <Steps />
       <CallToAction />
       <PricingTable />
