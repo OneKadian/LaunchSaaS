@@ -1,27 +1,27 @@
 import FlagIcon from "@mui/icons-material/Flag";
 import SpeedIcon from "@mui/icons-material/Speed";
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 const stepArray = [
   {
     Icon: <FlagIcon />,
-    Heading: "Step 1: Grab your keys",
+    Heading: "Step 1: Grab Your Keys",
     Description:
-      "Once you've the boilerplate and all the resources in your hand, you're already half way through. Follow the roadmap, grab your keys and get your to-be SaaS running",
+      "Once you have the boilerplate and resources, half the work is already done, Follow the instructions, grab and put your keys to get the engine started.",
   },
   {
     Icon: <SpeedIcon />,
-    Heading: "Step 2: Grab your keys",
+    Heading: "Step 2: Execute Your Idea",
     Description:
-      "Once you've the boilerplate and all the resources in your hand, you're already half way through.",
+      "Run the AI prompt for copywriting, prepare all the creatives using templates, and plan your launch with the resource sheet.",
   },
   {
-    Icon: <FlagIcon />,
-    Heading: "Step 1: Grab your keys",
+    Icon: <RocketLaunchIcon />,
+    Heading: "Step 3: Validate and Scale",
     Description:
-      "Once you've the boilerplate and all the resources in your hand, you're already half way through.",
+      "Deploy your product and send it to your target market to validate your idea, and iterate or scale based on the response.",
   },
 ];
-
 const Steps = () => {
   return (
     <div class=" bg-gray-900 py-8">
@@ -31,7 +31,7 @@ const Steps = () => {
           Launch in 3 Steps
         </h2>
         <p class="text-gray-300 text-xl p-2">
-          Launching a Saas doesn't get any simpler than this
+          Building products doesn't get any simpler than this
         </p>
       </div>
       <div class="mx-4 my-8 sm:mx-8 sm:my-10">
