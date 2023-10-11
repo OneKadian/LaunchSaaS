@@ -6,7 +6,7 @@ import SpeedIcon from "@mui/icons-material/Speed";
 // click on the feature, see the image change or it changes automatically every few seconds
 
 const featuredCopy = {
-  featuredHeading: "Share Products not Ideas",
+  featuredHeading: "Show Products not Ideas",
   featuredDescription:
     "You've read enough books, seen enough videos and followed enough founders, Its Time to build! ",
 };
