@@ -12,7 +12,8 @@ import Hotkey from "./components/Extras/Hotkey";
 import Testimanual from "./components/Extras/Testimanual";
 import PriceTable2 from "./components/Pricing/PriceTable2";
 import Steps from "./components/Extras/Steps";
-import Feta from "./components/Info/Feta";
+import Feta from "./components/Info/FeaturedSectionDynamic";
+import ScrollInfo from "./components/Info/ScrollInfo";
 
 export default function Home() {
   // Please comment out and import the components you wish to use / not use here
@@ -24,6 +25,7 @@ export default function Home() {
       <Feta />
       <Steps />
       <CallToAction />
+      <ScrollInfo />
       <PricingTable />
       <NumberStats />
       <NewsletterSection />
