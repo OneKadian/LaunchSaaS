@@ -11,7 +11,7 @@ export default function OpeningSection() {
   const [seconds, setSeconds] = useState(0);
 
   const openingCopy = {
-    announcementText: "This is rocket fuel for indie hackers",
+    announcementText: "Literally everything you need to Launch and beyond",
     titleText: "Launch your SaaS in the next",
     subtitleText:
       "The most succesful entrepreneurs on the internet launch and execute fast - and now you can too",
@@ -52,7 +52,6 @@ export default function OpeningSection() {
               <Link href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 {/* Below is the arrow for suggesting a route */}
-                {/* <span aria-hidden="true">&rarr;</span> */}
               </Link>
             </div>
           </div>

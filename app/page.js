@@ -14,6 +14,7 @@ import PriceTable2 from "./components/Pricing/PriceTable2";
 import Steps from "./components/Extras/Steps";
 import Feta from "./components/Info/FeaturedSectionDynamic";
 import ScrollInfo from "./components/Info/ScrollInfo";
+import Estimates from "./components/Info/Estimates";
 
 export default function Home() {
   // Please comment out and import the components you wish to use / not use here
@@ -26,6 +27,7 @@ export default function Home() {
       <Steps />
       <CallToAction />
       <ScrollInfo />
+      <Estimates />
       <PricingTable />
       <NumberStats />
       <NewsletterSection />

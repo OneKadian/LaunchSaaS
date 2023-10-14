@@ -47,13 +47,6 @@ const Testimanual = () => {
   return (
     <div class=" bg-gray-900 py-24 sm:py-32">
       <div class="text-center">
-        {/* <h2 class="text-4xl sm:text-5xl font-semibold sm:leading-[55px] sm:tracking-tight"> */}
-        {/* <h2 class="text-4xl sm:text-3xl font-semibold sm:leading-[55px] sm:tracking-tight">
-          What they say about us
-        </h2>
-        <p class="text-gray-300 sm:text-xl">
-          Thousands of makers love OneKadian and launched instantly
-        </p> */}
       </div>
       <div class="grid grid-cols-1 p-10 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {Testimonials.map((testimonial) => (

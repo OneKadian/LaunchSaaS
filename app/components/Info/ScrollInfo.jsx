@@ -4,6 +4,45 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import SpeedIcon from "@mui/icons-material/Speed";
+
+const ScrollCopy = {
+  featuredHeading: "Show Products not Ideas",
+  featuredDescription:
+    "You've read enough books, seen enough videos and followed enough founders, Its Time to build! ",
+};
+
+const Scrolls = [
+  {
+    name: "Turn Ideas into Reality",
+    description:
+      "Leave procrastination behind, Execute your ideas and see them come to life.",
+    icon: RocketLaunchIcon,
+  },
+  {
+    name: "Instant Launch",
+    description:
+      "Save time and effort with our ready-to-use components and launch instructions.",
+    icon: SpeedIcon,
+  },
+  {
+    name: "Validation and Scaling",
+    description:
+      "Avoid overthinking and Launch fast, Validate your ideas and scale your SaaS venture.",
+    icon: TrendingUpIcon,
+  },
+];
+
+const scrollExtra = {
+  text1:
+    "Deploy your product and send it to your target market to validate your idea, and iterate or scale based on the response.",
+  question: "Are you ready?",
+  text2:
+    "You've read enough books, seen enough videos and followed enough founders, Its Time to build! ",
+};
+
 const ScrollInfo = () => {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -12,16 +51,14 @@ const ScrollInfo = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-200">
+              {/* <p className="text-base font-semibold leading-7 text-indigo-200">
                 Deploy faster
-              </p>
+              </p> */}
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-                A better workflow
+                {ScrollCopy.featuredHeading}
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-300">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas.
+                {ScrollCopy.featuredDescription}
               </p>
             </div>
           </div>
@@ -36,74 +73,33 @@ const ScrollInfo = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-300 lg:max-w-lg">
-              <p>
+              {/* <p>
                 Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
                 risus enim. Mattis mauris semper sed amet vitae sed turpis id.
                 Id dolor praesent donec est. Odio penatibus risus viverra tellus
                 varius sit neque erat velit. Faucibus commodo massa rhoncus,
                 volutpat. Dignissim sed eget risus enim. Mattis mauris semper
                 sed amet vitae sed turpis id.
-              </p>
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                <li className="flex gap-x-3">
-                  <CloudArrowUpIcon
-                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                    aria-hidden="true"
-                  />
-                  <span>
-                    <strong className="font-semibold text-gray-300">
-                      Push to deploy.
-                    </strong>{" "}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <LockClosedIcon
-                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                    aria-hidden="true"
-                  />
-                  <span>
-                    <strong className="font-semibold text-gray-300">
-                      SSL certificates.
-                    </strong>{" "}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <ServerIcon
-                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
-                    aria-hidden="true"
-                  />
-                  <span>
-                    <strong className="font-semibold text-gray-300">
-                      Database backups.
-                    </strong>{" "}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
-                  </span>
-                </li>
-              </ul>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
-              </p>
+              </p> */}
+              <dl className="max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
+                {Scrolls.map((feature) => (
+                  <div key={feature.name} className="relative pl-9">
+                    <dt className="inline font-semibold text-white">
+                      <feature.icon
+                        className="absolute left-1 top-1 h-5 w-5 text-indigo-300"
+                        aria-hidden="true"
+                      />
+                      {feature.name}:
+                    </dt>{" "}
+                    <dd className="inline">{feature.description}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mt-8">{scrollExtra.text1}</p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-300">
-                No server? No problem.
+                {scrollExtra.question}
               </h2>
-              <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
-              </p>
+              <p className="mt-6">{scrollExtra.text2}</p>
             </div>
           </div>
         </div>

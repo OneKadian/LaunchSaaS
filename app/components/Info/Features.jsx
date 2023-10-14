@@ -9,40 +9,45 @@ import vercelLogo from "../../Images/vercelLogo.png";
 // Show all your features with this section, I use it to show my Tech stack
 
 const Features = () => {
+  const FeatureCopy = {
+    featureHeading: "Designed for Speed",
+    featureDescription: "Unleash innovation, save time, and launch swiftly",
+  };
+
   const stack = [
     {
       Image: nextLogo,
-      Heading: "Next JS",
+      Heading: "Next JS for Frontend",
       Description:
         "The new generation web framework for the Frontend and environment ",
     },
     {
       Image: stripeLogo,
-      Heading: "Stripe",
+      Heading: "Stripe for Payments",
       Description:
         "Cutting-edge payment platform for seamless transactions + webhooks ",
     },
     {
       Image: supabaseLogo,
-      Heading: "Supabase",
+      Heading: "Supabase for Backend",
       Description:
         "Next-gen open-source database with real-time updates for your SaaS",
     },
     {
       Image: tailwindLogo,
-      Heading: "Tailwind CSS",
+      Heading: "Tailwind CSS for Styling",
       Description:
         "Utility-first CSS framework for rapid and responsive development",
     },
     {
       Image: vercelLogo,
-      Heading: "Vercel",
+      Heading: "Vercel for Hosting",
       Description:
         "Cloud platform for seamless SaaS deployment, hosting, and scaling",
     },
     {
       Image: mailLogo,
-      Heading: "Mail",
+      Heading: "Mail for communication",
       Description:
         "Own your audience with email communication via ConvertKit and Resend",
     },
@@ -55,13 +60,11 @@ const Features = () => {
         id="stack-section"
       >
         <div class="max-w-screen-md mb-8 p-2 lg:mb-16">
-          {/* <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-white"> */}
-          {/* <h2 class="text-4xl sm:text-3xl font-semibold sm:leading-[55px] sm:tracking-tight"> */}
           <h2 className="text-3xl lg:text-4xl mb-2 font-semibold text-white sm:leading-[55px] sm:tracking-tight">
-            Designed for Speed
+            {FeatureCopy.featureHeading}
           </h2>
           <p class="text-gray-300 sm:text-xl">
-            Unleash innovation, save time, and launch swiftly
+            {FeatureCopy.featureDescription}
           </p>
         </div>
         {/* Collection */}
