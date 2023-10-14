@@ -1,7 +1,6 @@
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
 // Submit button does nothing, add function yourself
-
 export default function NewsletterSection() {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 lg:py-32">
