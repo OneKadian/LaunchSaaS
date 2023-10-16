@@ -14,6 +14,9 @@ import {
 import tailwindLogo from "../../Images/TailwindCSSLogo.png";
 import mailLogo from "../../Images/mailLogo.png";
 import vercelLogo from "../../Images/vercelLogo.png";
+import toolkit from "../../Images/toolkit.png";
+import notion from "../../Images/notionTemplate.png";
+import components from "../../Images/components.png";
 import Image from "next/image";
 
 const subpoints = [
@@ -22,21 +25,21 @@ const subpoints = [
     description:
       "Leave procrastination behind, Execute your ideas and see them come to life.",
     icon: RocketLaunchIcon,
-    imageUrl: tailwindLogo,
+    imageUrl: toolkit,
   },
   {
     name: "Instant Launch",
     description:
       "Save time and effort with our ready-to-use components and launch instructions.",
     icon: SpeedIcon,
-    imageUrl: mailLogo,
+    imageUrl: components,
   },
   {
     name: "Validation and Scaling",
     description:
       "Avoid overthinking and Launch fast, Validate your ideas and scale your SaaS venture.",
     icon: TrendingUpIcon,
-    imageUrl: vercelLogo,
+    imageUrl: notion,
   },
 ];
 
@@ -122,7 +125,7 @@ const FeaturedSection = () => {
             <Image
               src={subpoints[currentImageIndex].imageUrl}
               alt="Product screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-[48rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
               height={1442}
             />

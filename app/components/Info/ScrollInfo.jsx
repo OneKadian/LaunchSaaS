@@ -7,6 +7,8 @@ import {
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import SpeedIcon from "@mui/icons-material/Speed";
+import notion from "../../Images/notionTemplate.png";
+import Image from "next/image";
 
 const ScrollCopy = {
   featuredHeading: "Show Products not Ideas",
@@ -63,11 +65,29 @@ const ScrollInfo = () => {
             </div>
           </div>
         </div>
-        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
+        {/* Scroll image, hidden on mobile screen */}
+        <div className="hidden lg:block -ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          {/* <img
             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
             src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
             alt=""
+          /> */}
+          <Image
+            src={notion}
+            alt="Product screenshot"
+            className="w-[48rem] sm:w-[57rem] md:-ml-4"
+            width={2432}
+            height={1442}
+          />
+        </div>
+        {/* Image component, hidden on large screen, visible in mobile */}
+        <div className="lg:hidden flex justify-center items-center">
+          <Image
+            src={notion}
+            alt="Product screenshot"
+            className="w-[48rem]  rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            width={2432}
+            height={1442}
           />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">

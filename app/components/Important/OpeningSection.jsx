@@ -11,7 +11,7 @@ export default function OpeningSection() {
   const [seconds, setSeconds] = useState(0);
 
   const openingCopy = {
-    announcementText: "Literally everything you need to Launch and beyond",
+    announcementText: "Literally everything you need to get started",
     titleText: "Launch your SaaS in the next",
     subtitleText:
       "The most succesful entrepreneurs on the internet launch and execute fast - and now you can too",

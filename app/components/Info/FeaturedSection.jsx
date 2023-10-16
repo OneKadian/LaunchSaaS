@@ -1,6 +1,8 @@
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import SpeedIcon from "@mui/icons-material/Speed";
+import toolkit from "../../Images/toolkit.png";
+import Image from "next/image";
 
 // Quickly show your 3 best uses with this section, my future plan to build this would be:
 // click on the feature, see the image change or it changes automatically every few seconds
@@ -65,13 +67,22 @@ export default function FeaturedSection() {
               </dl>
             </div>
           </div>
-          <img
+          {/* <img
             src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}
             height={1442}
-          />
+          /> */}
+          <div className="flex justify-center items-center">
+            <Image
+              src={toolkit}
+              alt="Product screenshot"
+              className="w-[48rem]  rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              width={2432}
+              height={1442}
+            />
+          </div>
         </div>
       </div>
     </div>
