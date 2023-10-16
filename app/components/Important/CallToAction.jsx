@@ -1,4 +1,6 @@
 import Link from "next/link";
+import notion from "../../Images/notionTemplate.png";
+import Image from "next/image";
 
 export default function CallToAction() {
   const CTAcopy = {
@@ -39,13 +41,22 @@ export default function CallToAction() {
             </div>
           </div>
           {/* Image section */}
-          <div className="mt-16 h-80 lg:mt-8">
+          {/* <div className="mt-16 h-80 lg:mt-8">
             <img
               className=" left-0 top-0 w-[50rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
               src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
               alt="App screenshot"
               width={1824}
               height={1080}
+            />
+          </div> */}
+          <div className="mt-12 lg:mt-0 flex justify-center items-center">
+            <Image
+              src={notion}
+              alt="Product screenshot"
+              className="w-[48rem]  rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              width={2432}
+              height={1442}
             />
           </div>
         </div>
