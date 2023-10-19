@@ -1,6 +1,8 @@
 import OpeningSection from "./components/Important/OpeningSection";
 import CallToAction from "./components/Important/CallToAction";
 import FeaturedSection from "./components/Info/FeaturedSection";
+import FeaturedSection2 from "./components/Info/FeaturedSection2";
+import FeaturedSection3 from "./components/Info/FeaturedSection3";
 import NumberStats from "./components/Info/NumberStats";
 import PricingTable from "./components/Pricing/PricingTable";
 import NewsletterSection from "./components/Extras/NewsletterSection";
@@ -15,6 +17,7 @@ import Steps from "./components/Extras/Steps";
 import Feta from "./components/Info/FeaturedSectionDynamic";
 import ScrollInfo from "./components/Info/ScrollInfo";
 import Estimates from "./components/Info/Estimates";
+import PlainCTA from "./components/Info/PlainCTA";
 
 export default function Home() {
   // Please comment out and import the components you wish to use / not use here
@@ -23,18 +26,21 @@ export default function Home() {
       <OpeningSection />
       <Hotkey />
       <FeaturedSection />
-      <Feta />
-      <Steps />
-      <CallToAction />
-      <ScrollInfo />
-      <Estimates />
-      <PricingTable />
-      <NumberStats />
-      <NewsletterSection />
+      <FeaturedSection2 />
+      <FeaturedSection3 />
+      {/* <Feta /> */}
+      {/* <Steps /> */}
+      {/* <CallToAction /> */}
+      {/* <ScrollInfo /> */}
+      {/* <Estimates /> */}
+      {/* <PricingTable /> */}
+      {/* <NumberStats /> */}
+      {/* <NewsletterSection /> */}
       <Features />
       <PriceTable2 />
-      <ContactUsForm />
-      <Testimanual />
+      {/* <ContactUsForm /> */}
+      {/* <Testimanual /> */}
+      <PlainCTA />
       <Frequently />
       <Footer />
     </>

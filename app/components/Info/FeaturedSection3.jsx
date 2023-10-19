@@ -1,38 +1,37 @@
-import LayersIcon from "@mui/icons-material/Layers";
-import VpnKeyIcon from "@mui/icons-material/VpnKey";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-import components from "../../Images/components.png";
+import PentagonIcon from "@mui/icons-material/Pentagon";
+import SavedSearchIcon from "@mui/icons-material/SavedSearch";
+import ExtensionIcon from "@mui/icons-material/Extension";
+import notion from "../../Images/notionTemplate.png";
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Everything already made",
-  // featuredHeading: "Code already written",
+  featuredHeading: "Planning already done",
   featuredDescription:
-    "All the code you'll need to launch is ready, use it to build products swiftly.",
+    "Use the notion template with the knowledge inside to manage and execute your ideas.",
 };
 
 const features = [
   {
-    name: "Ready to use Components",
+    name: "Five Phases",
     description:
-      "Don't create from scratch, build quickly using 15+ components.",
-    icon: LayersIcon,
+      "Your whole product cycle divided into 5 phases to ensure a smooth flow.",
+    icon: PentagonIcon,
   },
   {
-    name: "Payments, Auth and DB",
+    name: "Hacks and findings",
     description:
-      "Save hours by not having to setup, simply put keys and get started",
-    icon: VpnKeyIcon,
+      "Specific knowledge pertaining to each phase inserted for success.",
+    icon: SavedSearchIcon,
   },
   {
-    name: "Clear Instructions",
+    name: "Templates",
     description:
-      "Documentation, templates & notes to ensure its easy for even juniors.",
-    icon: LibraryBooksIcon,
+      "Readymade prompts and templates to enable rapid product development.",
+    icon: ExtensionIcon,
   },
 ];
 
-export default function FeaturedSection() {
+export default function FeaturedSection2() {
   return (
     <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -67,7 +66,7 @@ export default function FeaturedSection() {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src={components}
+              src={notion}
               alt="Product screenshot"
               className="w-[48rem]  rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
               width={2432}
