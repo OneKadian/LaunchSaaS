@@ -4,6 +4,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import SingleTestimonial from "../Extras/SingleTestimonial";
 
 export default function OpeningSection() {
   // Initialize state for minutes and seconds
@@ -12,9 +13,9 @@ export default function OpeningSection() {
 
   const openingCopy = {
     announcementText: "Literally everything you need to get started",
-    titleText: "Launch your SaaS in the next",
+    titleText: "Launch your Product in the next",
     subtitleText:
-      "The most succesful entrepreneurs on the internet launch and execute fast - and now you can too",
+      "Code Boilerplate, resource sheet and templates to turn developers into founders and help them launch instantly",
   };
 
   // Function to update the countdown
@@ -42,19 +43,9 @@ export default function OpeningSection() {
 
   return (
     <div className="bg-gray-900">
-      {/* Navbar */}
-
       <div className="relative isolate px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:pb-24 pt-48">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-100 ring-1 ring-indigo-600 hover:ring-white">
-              "{openingCopy.announcementText}"{" "}
-              <Link href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                {/* Below is the arrow for suggesting a route */}
-              </Link>
-            </div>
-          </div>
+        <div className="mx-auto max-w-2xl py-32 lg:pb-24 pt-32">
+          <SingleTestimonial />
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               {openingCopy.titleText} <span> </span>
@@ -77,13 +68,14 @@ export default function OpeningSection() {
               {openingCopy.subtitleText}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Launch your idea ➝
-              </a>
+              </Link>
             </div>
+            {/* <SingleTestimonial /> */}
           </div>
         </div>
         <div

@@ -33,6 +33,11 @@ const Frequently = () => {
         "Yes and No. Yes, if you have an idea and are ready to launch with a landing page followed by an MVP and, No if you plan to build the perfect product before launching :)",
     },
     {
+      Question: "Can I use this as a junior dev?",
+      Answer:
+        "Yes you can, given you've already worked with JS, Tailwind CSS and Next JS. The instructions does the job of making it easy to use and launch",
+    },
+    {
       Question: "What if my question is not listed here",
       Answer:
         "Not a problem, reach out to me via Mail, twitter or LinkedIn and I'll be very happy to answer. Links in Footer.",
