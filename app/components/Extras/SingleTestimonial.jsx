@@ -14,7 +14,7 @@ const SingleTestimonial = () => {
         {/* The element */}
         <div className="sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm font-semibold leading-6 text-gray-100 ">
-            "Turns projects into products" - Brian Jenney
+            "Turns projects into products" - Brian
           </div>
         </div>
         <div className="avatar h-max rounded-full ring ring-primary ring-offset-base-100 ring-offset-1">

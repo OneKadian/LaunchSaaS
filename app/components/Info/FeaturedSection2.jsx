@@ -5,7 +5,7 @@ import toolkit from "../../Images/toolkit.png";
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Resources already found",
+  featuredHeading: "Resources found",
   featuredDescription:
     "Cut down on your research with the constantly updating resource sheet.",
 };

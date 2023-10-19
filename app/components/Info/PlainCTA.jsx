@@ -13,11 +13,10 @@ export default function PlainCTA() {
         <div class="mx-auto max-w-screen-sm text-center">
           {/* <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-300"> */}
           <h2 class="text-3xl text-center mb-2 lg:text-4xl font-semibold text-white sm:leading-[55px] sm:tracking-tight">
-            Build like the most successful entrepreneurs
+            Build with speed
           </h2>
           <p class="mb-6 font-light text-gray-300 md:text-lg">
-            "It brought an end to my procrastination & helped me launch a SaaS
-            in less than an hour" - Nakul Siwach
+            Don't reinvent the wheel
           </p>
           <a
             href="#"

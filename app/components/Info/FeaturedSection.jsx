@@ -5,7 +5,7 @@ import components from "../../Images/components.png";
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Everything already made",
+  featuredHeading: "Everything made",
   // featuredHeading: "Code already written",
   featuredDescription:
     "All the code you'll need to launch is ready, use it to build products swiftly.",
