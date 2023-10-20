@@ -26,7 +26,7 @@ const features = [
   {
     name: "Read the secrets",
     description:
-      "Use our curated list of the best writeups for builders to read and implement.",
+      "Use our curated list of the writeups for builders to read and implement.",
     icon: MenuBookIcon,
   },
 ];
