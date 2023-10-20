@@ -5,8 +5,8 @@ import components from "../../Images/components.png";
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Everything already made",
-  // featuredHeading: "Code already written",
+  // featuredHeading: "Everything made",
+  featuredHeading: "Code written",
   featuredDescription:
     "All the code you'll need to launch is ready, use it to build products swiftly.",
 };
@@ -27,7 +27,7 @@ const features = [
   {
     name: "Clear Instructions",
     description:
-      "Documentation, templates & notes to ensure its easy for even juniors.",
+      "Documentation, templates & notes to ensure its easy for first timers and juniors too.",
     icon: LibraryBooksIcon,
   },
 ];

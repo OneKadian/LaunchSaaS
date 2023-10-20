@@ -44,7 +44,7 @@ export default function OpeningSection() {
   return (
     <div className="bg-gray-900">
       <div className="relative isolate px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 lg:pb-24 pt-32">
+        <div className="mx-auto max-w-2xl lg:pb-24 pt-20 lg:pt-32">
           <SingleTestimonial />
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">

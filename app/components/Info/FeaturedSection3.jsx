@@ -5,7 +5,7 @@ import notion from "../../Images/notionTemplate.png";
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Planning already done",
+  featuredHeading: "Planning done",
   featuredDescription:
     "Use the notion template with the knowledge inside to manage and execute your ideas.",
 };
