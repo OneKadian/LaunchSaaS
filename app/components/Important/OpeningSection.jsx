@@ -13,7 +13,7 @@ export default function OpeningSection() {
 
   const openingCopy = {
     announcementText: "Literally everything you need to get started",
-    titleText: "Launch your Product in the next",
+    titleText: "Launch your SaaS in the next",
     subtitleText:
       "Code Boilerplate, resource sheet and templates to turn developers into founders and help them launch instantly",
   };
@@ -47,7 +47,7 @@ export default function OpeningSection() {
         <div className="mx-auto max-w-2xl lg:pb-24 pt-20 lg:pt-32">
           <SingleTestimonial />
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">
               {openingCopy.titleText} <span> </span>
             </h1>
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max justify-center mt-4">
