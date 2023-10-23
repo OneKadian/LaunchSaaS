@@ -18,6 +18,7 @@ import Feta from "./components/Info/FeaturedSectionDynamic";
 import ScrollInfo from "./components/Info/ScrollInfo";
 import Estimates from "./components/Info/Estimates";
 import PlainCTA from "./components/Info/PlainCTA";
+import FoundersNote from "./components/Extras/FoundersNote";
 
 export default function Home() {
   // Please comment out and import the components you wish to use / not use here
@@ -40,7 +41,8 @@ export default function Home() {
       <PriceTable2 />
       {/* <ContactUsForm /> */}
       {/* <Testimanual /> */}
-      <PlainCTA />
+      {/* <PlainCTA /> */}
+      <FoundersNote />
       <Frequently />
       <Footer />
     </>

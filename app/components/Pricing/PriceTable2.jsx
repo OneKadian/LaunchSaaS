@@ -15,23 +15,23 @@ const PriceTable2 = () => {
         "Your current situation where the idea is nowhere near Launch",
       features: [
         {
-          text: "Boiler Plate with instructions",
+          text: "Creating from scratch",
           Icon: <CloseIcon className="text-red-600" />,
         },
         {
-          text: "Organized flow with roadmaps",
+          text: "Unorganized flow of work",
           Icon: <CloseIcon className="text-red-600" />,
         },
         {
-          text: "Resource sheet included",
+          text: "Searching for resources",
           Icon: <CloseIcon className="text-red-600" />,
         },
         {
-          text: "Launch: Instant",
+          text: "Launch: Delayed",
           Icon: <CloseIcon className="text-red-600" />,
         },
         {
-          text: "Updates: Available",
+          text: "Targets: Missed",
           Icon: <CloseIcon className="text-red-600" />,
         },
       ],
