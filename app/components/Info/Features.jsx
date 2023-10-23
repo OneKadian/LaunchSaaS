@@ -5,6 +5,7 @@ import supabaseLogo from "../../Images/supa.png";
 import tailwindLogo from "../../Images/TailwindCSSLogo.png";
 import mailLogo from "../../Images/mailLogo.png";
 import vercelLogo from "../../Images/vercelLogo.png";
+import notionLogo from "../../Images/notionLogo.png";
 
 // Show all your features with this section, I use it to show my Tech stack
 
@@ -31,7 +32,7 @@ const Features = () => {
       Image: supabaseLogo,
       Heading: "Supabase for Backend",
       Description:
-        "Next-gen open-source database with real-time updates for your SaaS",
+        "Next-gen open-source database with real time updates for your SaaS",
     },
     {
       Image: tailwindLogo,
@@ -40,16 +41,16 @@ const Features = () => {
         "Utility-first CSS framework for rapid and responsive development",
     },
     {
-      Image: vercelLogo,
-      Heading: "Vercel for Hosting",
+      Image: notionLogo,
+      Heading: "Notion for management",
       Description:
-        "Cloud platform for seamless SaaS deployment, hosting, and scaling",
+        "Notion Template and pages to manage your complete product workflow",
     },
     {
       Image: mailLogo,
       Heading: "Mail for communication",
       Description:
-        "Own your audience with email communication via ConvertKit and Resend",
+        "Own your audience with communication via ConvertKit and Resend",
     },
   ];
 
