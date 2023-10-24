@@ -3,9 +3,9 @@
 const Frequently = () => {
   const Questions = [
     {
-      Question: "What is OneKadian?",
+      Question: "What is the Indie Hacker Kit?",
       Answer:
-        "OneKadian is the solution to your launch procrastrination, a pack to help you launch instantly and scale from over there",
+        "Indie Hacker Kit is a combination of a code boilerplate with auth/payments/DB already setup alongwith a resource sheet, notion template and ai prompts with clear instructions to help you launch a product today",
     },
     {
       Question: "If I can build it, why should I buy it?",
@@ -20,7 +20,7 @@ const Frequently = () => {
     {
       Question: "What all do I get?",
       Answer:
-        "OneKadian is a combination of a boilerplate with launch instructions, templates, resource sheet, roadmaps and a subscription to the newsletter",
+        "IHK is a combination of a boilerplate with launch instructions, templates, resource sheet, roadmaps and a subscription to the newsletter",
     },
     {
       Question: "How often do I get updates?",
@@ -53,7 +53,7 @@ const Frequently = () => {
               FAQ
             </h2>
             <p className="text-gray-300 mt-4 text-lg text-center">
-              Discover more about OneKadian
+              Discover more about Indie Hacker Kit
             </p>
           </div>
         </div>
