@@ -3,6 +3,7 @@ import { currentUser } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
 import kadianLogo from "../../Images/kadianLogo.png";
+import Logo2 from "../../Images/logo2.png";
 import SideMenu from "./SideMenu";
 import NavElements from "./NavElements";
 import Hotkey from "../Extras/Hotkey";
@@ -23,7 +24,8 @@ const Navbar = async () => {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             {/* Your Logo */}
-            <Image className="h-10 w-auto lg:h-11" src={kadianLogo} alt="" />
+            {/* <Image className="h-10 w-auto lg:h-11" src={kadianLogo} alt="" /> */}
+            <Image className="h-10 w-auto lg:h-11" src={Logo2} alt="" />
           </Link>
         </div>
         {/* Navbar elements */}

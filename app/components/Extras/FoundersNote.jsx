@@ -26,7 +26,7 @@ const FoundersNote = () => {
                     Anirudh Kadian
                   </Link>
                   <p className="text-base text-gray-500 ">
-                    Creator of OneKadian
+                    Creator of Indie Hacker Kit
                   </p>
                   {/* <p className="text-base text-gray-500 ">
                     <time

@@ -26,7 +26,7 @@ const Footer = () => {
     <footer class="p-4 bg-gray-900 md:p-8 lg:p-10">
       <div className="mx-auto max-w-screen-xl text-center">
         <h2 class="flex justify-center items-center text-2xl font-semibold text-white">
-          OneKadian
+          Indie Hacker Kit
         </h2>
         <p class="my-6 text-gray-500">
           Everything you need to execute that idea today and launch your product
