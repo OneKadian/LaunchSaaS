@@ -54,15 +54,15 @@ const FoundersNote = () => {
                 <li>2. Searching for resources without any direction</li>
               </ol>
               <p className="lead text-gray-400 mt-2">
-                That's why I built OneKadian - to help indie hackers like you to
-                build your ideas fast
+                That's why I built the Indie Hacker Kit - to help people like
+                you to build your ideas fast
               </p>
             </p>
           </p>
           <p className="text-gray-400 pt-2">
-            Its a mix of code components with auth & payments already setup,
-            along with a ton of resources, such as ai prompts, notion templates,
-            resource sheet with 100+ tools and reading material
+            It contains a code boilerplate, resource sheet with tools and
+            valuable reading stuff, notion template, ai prompts with clear
+            instructions for How-to do what.
             <p className="text-gray-400 pt-2">
               If you wish to turn your idea into a product, you're at the right
               place, get started!
