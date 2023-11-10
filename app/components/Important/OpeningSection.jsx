@@ -13,7 +13,7 @@ export default function OpeningSection() {
 
   const openingCopy = {
     announcementText: "Literally everything you need to get started",
-    titleText: "Launch your SaaS in the next",
+    titleText: "Launch your SaaS in the next 30 Minutes",
     subtitleText:
       "Code Boilerplate, resource sheet and templates to turn developers into founders and help them launch instantly",
   };
@@ -44,13 +44,13 @@ export default function OpeningSection() {
   return (
     <div className="bg-gray-900">
       <div className="relative isolate px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:pb-24 pt-24 lg:pt-32">
+        <div className="mx-auto max-w-2xl lg:pb-24 pt-36 lg:pt-40">
           <SingleTestimonial />
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               {openingCopy.titleText} <span> </span>
             </h1>
-            <div className="grid grid-flow-col gap-5 text-center auto-cols-max justify-center mt-4">
+            {/* <div className="grid grid-flow-col gap-5 text-center auto-cols-max justify-center mt-4">
               <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                 <span className="countdown font-mono text-5xl flex justify-center">
                   <span style={{ "--value": minutes }}></span>
@@ -63,7 +63,7 @@ export default function OpeningSection() {
                 </span>
                 seconds
               </div>
-            </div>
+            </div> */}
             <p className="mt-6 text-lg leading-8 text-gray-300">
               {openingCopy.subtitleText}
             </p>
