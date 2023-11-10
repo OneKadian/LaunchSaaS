@@ -18,6 +18,7 @@
     "@mui/icons-material": "^5.14.8",
     "@mui/material": "^5.14.8",
     "@nextui-org/react": "^2.1.7",
+    "@supabase/supabase-js": "^2.38.4",
     "@tailwindcss/forms": "^0.5.4",
     "autoprefixer": "10.4.14",
     "framer-motion": "^10.16.1",
