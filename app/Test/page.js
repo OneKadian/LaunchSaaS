@@ -106,7 +106,7 @@ export default function Shipping() {
               ))}
             </AccordionList>
           ) : (
-            <p>Ideas are loading....</p>
+            <p>Ideas are loading...</p>
           )}
         </div>
 
