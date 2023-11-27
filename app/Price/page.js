@@ -2,7 +2,7 @@
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
-import { supabase } from "../../supabase";
+import { supabase } from "../../supabase/supabaseClient";
 import { useState, useEffect } from "react";
 
 export default function PriceTable2() {
