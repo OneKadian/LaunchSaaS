@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <OpeningSection />
-      <Hotkey />
+      {/* <Hotkey /> */}
       <FeaturedSection />
       <FeaturedSection2 />
       <FeaturedSection3 />
