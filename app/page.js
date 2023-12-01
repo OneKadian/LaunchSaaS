@@ -19,6 +19,7 @@ import ScrollInfo from "./components/Info/ScrollInfo";
 import Estimates from "./components/Info/Estimates";
 import PlainCTA from "./components/Info/PlainCTA";
 import FoundersNote from "./components/Extras/FoundersNote";
+import StripePricingTable from "./components/Pricing/StripePricingTable";
 
 export default function Home() {
   // Please comment out and import the components you wish to use / not use here
@@ -39,6 +40,7 @@ export default function Home() {
       {/* <NewsletterSection /> */}
       <Features />
       <PriceTable2 />
+      <StripePricingTable />
       {/* <ContactUsForm /> */}
       {/* <Testimanual /> */}
       {/* <PlainCTA /> */}

@@ -37,6 +37,7 @@ const PriceTable2 = () => {
       ],
       buttonDisplay: "hidden",
       buttonText: "Before One Kadian",
+      link: "",
     },
     {
       title: "Innovator",
@@ -67,6 +68,7 @@ const PriceTable2 = () => {
       ],
       buttonDisplay: "",
       buttonText: "LAUNCH",
+      link: "https://buy.stripe.com/5kA8zVgVV2Phbi86oo",
     },
     {
       title: "Pioneer",
@@ -98,6 +100,7 @@ const PriceTable2 = () => {
       ],
       buttonDisplay: "",
       buttonText: "LAUNCH",
+      link: "https://buy.stripe.com/7sI8zV6hh61tgCs9AB",
     },
   ];
 
@@ -142,7 +145,7 @@ const PriceTable2 = () => {
                 ))}
               </ul>
               <Link
-                href="#"
+                href={price.link}
                 className={`text-white bg-primary-700 ${price.buttonDisplay} font-medium rounded-lg w-fit mx-auto text-sm px-20 py-3 text-center`}
               >
                 {price.buttonText}
