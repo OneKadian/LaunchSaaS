@@ -7,8 +7,8 @@ import {
   AccordionList,
 } from "@tremor/react";
 import { useEffect, useState } from "react";
-import { getIdeas } from "@/supabase/supabaseRequests";
-import { supabaseReadAuth } from "@/supabase/supabaseClient";
+import { getIdeas } from "../../supabase/supabaseRequests";
+import { supabaseReadAuth } from "../../supabase/supabaseClient";
 
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center">
@@ -97,15 +97,22 @@ export default function Shipping() {
           {isLoading ? (
             <LoadingSpinner />
           ) : Array.isArray(BizIdeas) && BizIdeas.length > 0 ? (
-            <AccordionList className="max-w-md mx-auto">
+            // <AccordionList className="max-w-md mx-auto">
+            <div>
               {BizIdeas.map((idean) => (
-                <Accordion key={idean.id}>
-                  <AccordionHeader>{idean.idea} </AccordionHeader>
-                  <AccordionBody>{idean.details}</AccordionBody>
-                </Accordion>
+                <div className="collapse collapse-plus bg-base-200">
+                  <input type="radio" name="my-accordion-3" checked="checked" />
+                  <div className="collapse-title text-xl font-medium">
+                    {idean.idea}
+                  </div>
+                  <div className="collapse-content">
+                    <p>{idean.details}</p>
+                  </div>
+                </div>
               ))}
-            </AccordionList>
+            </div>
           ) : (
+            // </AccordionList>
             <p>Ideas are loading...</p>
           )}
         </div>

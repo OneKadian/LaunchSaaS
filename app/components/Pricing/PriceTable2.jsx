@@ -1,10 +1,10 @@
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
-import Link from "next/link";
-
-const PriceTable2 = () => {
-  // A close icon will render a red cross and a Done icon will give a green tick
-  // Just make changes to the prices array
+import { currentUser } from "@clerk/nextjs";
+import CustomLink from "../Extras/CustomLink";
+import CheckoutButton from "./StripeSess";
+const PriceTable2 = async () => {
+  const user = await currentUser();
 
   const prices = [
     {
@@ -35,6 +35,8 @@ const PriceTable2 = () => {
           Icon: <CloseIcon className="text-red-600" />,
         },
       ],
+      id: "noPlan",
+      priceType: "",
       buttonDisplay: "hidden",
       buttonText: "Before One Kadian",
       link: "",
@@ -42,7 +44,7 @@ const PriceTable2 = () => {
     {
       title: "Innovator",
       per: "/month",
-      price: "$70",
+      price: "$25",
       description: "Take off with us and build your SaaS venture at warp speed",
       features: [
         {
@@ -66,14 +68,16 @@ const PriceTable2 = () => {
           Icon: <CloseIcon className="text-red-600" />,
         },
       ],
+      id: "MonthlyPlan",
+      priceType: "monthly",
       buttonDisplay: "",
       buttonText: "LAUNCH",
-      link: "https://buy.stripe.com/5kA8zVgVV2Phbi86oo",
+      link: "https://buy.stripe.com/test_28o6oUdXp50nb5e4gi",
     },
     {
       title: "Pioneer",
-      per: "/month",
-      price: "$100",
+      per: "/year",
+      price: "$250",
       description:
         "If you're in it for the long haul, this plan is tailor-made for you.",
       features: [
@@ -98,15 +102,17 @@ const PriceTable2 = () => {
           Icon: <DoneIcon className="text-green-400" />,
         },
       ],
+      id: "AnnualPlan",
+      priceType: "annual",
       buttonDisplay: "",
       buttonText: "LAUNCH",
-      link: "https://buy.stripe.com/7sI8zV6hh61tgCs9AB",
+      link: "https://buy.stripe.com/test_4gw5kQ9H91Ob4GQ9AD",
     },
   ];
 
   return (
     <div className="bg-gray-900 py-24 lg:py-32">
-      <div className="space-y-3 mb-12 text-center p-2">
+      <div className="space-y-3 mb-12 text-center p-2" id="pricing-section2">
         <h2 className="text-3xl lg:text-4xl mb-2 font-semibold text-white sm:leading-[55px] sm:tracking-tight">
           Pricing
         </h2>
@@ -118,6 +124,7 @@ const PriceTable2 = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-4/5">
           {prices.map((price, index) => (
             <div
+              id={price.id}
               key={index}
               className="bg-gray-800 border border-gray-700 flex flex-col p-6 text-center rounded-xl min-h-[500px] justify-center"
             >
@@ -129,9 +136,9 @@ const PriceTable2 = () => {
                   {price.price}
                 </span>
                 {/* Monthly pricing? just uncomment this span below */}
-                {/* <span className="text-xl font-semibold text-gray-300">
+                <span className="text-xl font-semibold text-gray-300">
                   {price.per}
-                </span> */}
+                </span>
               </div>
               <ul className="mb-8 space-y-4 text-left mx-auto">
                 {price.features.map((feature, featureIndex) => (
@@ -144,12 +151,16 @@ const PriceTable2 = () => {
                   </li>
                 ))}
               </ul>
-              <Link
-                href={price.link}
+              <CustomLink
+                locationID={price.id}
+                modelType={price.priceType}
+                user={user}
+                link={price.link}
+                display={price.buttonText}
                 className={`text-white bg-primary-700 ${price.buttonDisplay} font-medium rounded-lg w-fit mx-auto text-sm px-20 py-3 text-center`}
-              >
-                {price.buttonText}
-              </Link>
+              />
+              {/* <CustomLink /> */}
+              {/* <CheckoutButton display={price.buttonDisplay} /> */}
             </div>
           ))}
         </div>
