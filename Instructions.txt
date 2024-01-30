@@ -14,3 +14,10 @@ Step 3: Make all the necessary changes to the components with your information, 
 Step 4: Add to github, deploy on vercel make sure to add the env.local into settings>environment variables
 
 Step 5: Launch and tag me @OneKadian to make me happy. 
+
+stripe customer portal: 
+billing.stripe.com/p/login/8wM6rS1oUbwdfUAfYY
+
+stripe test customer portal: https://billing.stripe.com/p/login/test_3csaG2csp7sj8wwbII
+
+webhook secret: whsec_4bcf6a52d33f586e9a18a7455a93928e4ccc43a244d7150ec8dfe546085df407

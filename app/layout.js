@@ -1,5 +1,13 @@
 import "./globals.css";
-import { ClerkProvider, UserProfile } from "@clerk/nextjs";
+// import { ClerkProvider, UserProfile } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  RedirectToSignIn,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
+
 import { Inter } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Navbar from "./components/Navigation/Navbar";

@@ -8,6 +8,7 @@ import PricingTable from "./components/Pricing/PricingTable";
 import NewsletterSection from "./components/Extras/NewsletterSection";
 import Features from "./components/Info/Features";
 import ContactUsForm from "./components/Extras/ContactUsForm";
+import Toast from "./components/Extras/Toast";
 import Footer from "./components/Footer/Footer";
 import Frequently from "./components/Important/Frequently.jsx";
 import Hotkey from "./components/Extras/Hotkey";
@@ -40,7 +41,8 @@ export default function Home() {
       {/* <NewsletterSection /> */}
       <Features />
       <PriceTable2 />
-      <StripePricingTable />
+      {/* <Toast /> */}
+      {/* <StripePricingTable /> */}
       {/* <ContactUsForm /> */}
       {/* <Testimanual /> */}
       {/* <PlainCTA /> */}

@@ -5,7 +5,7 @@ import Link from "next/link";
 //  Don't forget to add the href as an id to the desired section my friend!
 
 const navigation = [
-  { name: "Pricing", href: "#pricing-section" },
+  { name: "Pricing", href: "#pricing-section2" },
   { name: "Stack", href: "#stack-section" },
   { name: "FAQ", href: "#faq-section" },
 ];

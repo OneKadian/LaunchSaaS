@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
 import kadianLogo from "../../Images/kadianLogo.png";
@@ -33,7 +34,7 @@ const Navbar = async () => {
         <div className="lg:flex lg:flex-1 lg:justify-end">
           <div className="flex items-center">
             {/* Clerk user button based on cookies, Login button */}
-            {/* {!user ? (
+            {!user ? (
               <Link
                 href="/sign-in"
                 className="text-lg font-semibold leading-6 text-gray-100 mx-4"
@@ -42,7 +43,7 @@ const Navbar = async () => {
               </Link>
             ) : (
               <UserButton afterSignOutUrl="/" className="" />
-            )} */}
+            )}
             {/* <Hotkey /> */}
 
             {/* Side menu for mobile */}
@@ -55,3 +56,8 @@ const Navbar = async () => {
 };
 
 export default Navbar;
+
+export const clerkUserID = async () => {
+  const { userId } = auth();
+  return userId;
+};
