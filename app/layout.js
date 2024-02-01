@@ -11,6 +11,8 @@ import {
 import { Inter } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Navbar from "./components/Navigation/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -24,7 +26,11 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <Navbar />
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          {children}
+          <SpeedInsights />
+          <Analytics />
+        </body>
       </html>
     </ClerkProvider>
   );
