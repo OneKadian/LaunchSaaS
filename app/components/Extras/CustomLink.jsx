@@ -3,6 +3,7 @@ import Link from "next/link";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "next/router";
 import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(
@@ -13,7 +14,12 @@ function CustomLink({ link, className, display, user, locationID, modelType }) {
   const [toastDisplay, setToastDisplay] = useState(false);
   const pricingBracketRef = useRef(null);
 
-  const handleClick = async (linker, usir, locationID) => {
+  const handleToastClick = () => {
+    const navigate = useNavigate();
+    navigate("/sign-in?redirectUrl=/#MonthlyPlan"); // Pass the redirect URL as a query parameter
+  };
+
+  const handleClick = async (usir, locationID) => {
     if (!usir) {
       setToastDisplay(true);
       if (pricingBracketRef.current) {
@@ -77,6 +83,7 @@ function CustomLink({ link, className, display, user, locationID, modelType }) {
                     <div></div>
                     <div>
                       <Link
+                        // href="/sign-in-custom"
                         href="/sign-in"
                         className="inline-flex justify-center items-center w-3/4 h-full px-2 py-1.5 text-xs font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
                       >

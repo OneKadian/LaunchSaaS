@@ -23,3 +23,12 @@ export const addIdeas = async ({ event, userId, token }) => {
   }
   return data;
 };
+
+export const getSubscriptionStatus = async ({ userId, token }) => {
+  const supabase = await supabaseReadAuth(token);
+  const { data: status } = await supabase
+    .from("Subscription")
+    .select("status")
+    .eq("clerk_userId", userId);
+  return status;
+};
