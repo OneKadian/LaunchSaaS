@@ -1,11 +1,5 @@
 "use client";
 import { useAuth } from "@clerk/nextjs";
-import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionList,
-} from "@tremor/react";
 import { useEffect, useState } from "react";
 import { getIdeas } from "../../supabase/supabaseRequests";
 import { supabaseReadAuth } from "../../supabase/supabaseClient";

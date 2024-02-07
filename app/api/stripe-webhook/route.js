@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import {
   insertSubscription,
   updateSubscription,
+  updateSubscriptionDeleted,
 } from "../../../supabase/supabaseStripe.js";
 
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY, {
@@ -23,12 +24,28 @@ export async function POST(req) {
         const eventual = event.data.object;
         const subscriptionId = event.data.object.subscription;
         const userID = event.data.object.metadata?.userID;
-        await insertSubscription(eventual, subscriptionId, userID);
+        const mode = event.data.object.mode;
+        await insertSubscription(eventual, subscriptionId, userID, mode);
         break;
       case "customer.subscription.updated":
         const events = event.data.object;
         const id = event.data.object.id;
-        await updateSubscription(events, id);
+        await updateSubscriptionDeleted(events, id);
+        break;
+      case "checkout.session.expired":
+        // Abandoned Cart recovery- send mail
+        break;
+      case "customer.subscription.deleted":
+        const eventsTwo = event.data.object;
+        const idTwo = event.data.object.id;
+        await updateSubscription(eventsTwo, idTwo);
+        break;
+      // make customer inactive - status is canceled
+      case "invoice.upcoming":
+        // send reminder mail to pay to the customer
+        break;
+      case "invoice.due":
+        // send reminder mail to pay to the customer
         break;
       default:
         console.log("Unhandled webhook event:", event.type);
