@@ -1,30 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../Images/logo.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 //  Don't forget to add the href as an id to the desired section my friend!
 // Menu for mobile, not visible on PC
 
-const navigation = [
-  { name: "Pricing", href: "#pricing-section" },
-  { name: "Stack", href: "#stack-section" },
-  { name: "FAQ", href: "#faq-section" },
-];
-
 const SideMenu = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const navigation = [
+    { name: "Pricing", href: "#pricing-section" },
+    { name: "Stack", href: "#stack-section" },
+    { name: "FAQ", href: "#faq-section" },
+  ];
+
+  const membersNavigation = [
+    { name: "Home", href: "/" },
+    {
+      name: "Billing",
+      href: "https://billing.stripe.com/p/login/test_3csaG2csp7sj8wwbII",
+    },
+  ];
+
+  const memoizedNavigation = useMemo(() => {
+    return pathname === "/members" ? membersNavigation : navigation;
+  }, [pathname, navigation, membersNavigation]); // Recompute only if relevant values change
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleScroll = (e, targetId) => {
-    e.preventDefault();
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+  const handleScroll = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const targetElement = document.getElementById(href.substring(1));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Redirect to external links or routes
+      const router = useRouter();
+      router.push(href, { scroll: false });
     }
   };
 
@@ -67,11 +89,11 @@ const SideMenu = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10 ">
               <div className="space-y-2 py-6 ">
-                {navigation.map((item) => (
+                {memoizedNavigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    onClick={(e) => handleScroll(e, item.href.substring(1))}
+                    onClick={(e) => handleScroll(e, item.href)}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:text-white"
                   >
                     {item.name}

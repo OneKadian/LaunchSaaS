@@ -1,9 +1,7 @@
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
-import { auth } from "@clerk/nextjs";
 import Link from "next/link";
 import Image from "next/image";
-import kadianLogo from "../../Images/kadianLogo.png";
 import Logo2 from "../../Images/logo2.png";
 import SideMenu from "./SideMenu";
 import NavElements from "./NavElements";
@@ -45,7 +43,6 @@ const Navbar = async () => {
               <UserButton afterSignOutUrl="/" className="" />
             )}
             {/* <Hotkey /> */}
-
             {/* Side menu for mobile */}
             <SideMenu className="" />
           </div>
@@ -56,8 +53,3 @@ const Navbar = async () => {
 };
 
 export default Navbar;
-
-export const clerkUserID = async () => {
-  const { userId } = auth();
-  return userId;
-};
