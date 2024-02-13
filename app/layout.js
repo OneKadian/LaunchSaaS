@@ -14,7 +14,7 @@ import Navbar from "./components/Navigation/Navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "SaaS Template",
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <Navbar />
-        <body className={inter.className}>
+        <body className={montserrat.className}>
           {children}
           <SpeedInsights />
           <Analytics />
