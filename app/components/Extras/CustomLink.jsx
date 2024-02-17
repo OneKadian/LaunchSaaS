@@ -1,26 +1,21 @@
 "use client";
 import Link from "next/link";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate } from "next/router";
 import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(
   "pk_test_51NzbPASJ8icdk6axC83MTjzkq0ZB2sBmKwj4CXVlVWgikVCKJWp7mXVfSTKFEwFbXGImMaRzxAaL8sm0kgzK89HZ005qHaSis1"
 );
 
-function CustomLink({ link, className, display, user, locationID, modelType }) {
+function CustomLink({ className, display, user, locationID, modelType }) {
   const [toastDisplay, setToastDisplay] = useState(false);
   const pricingBracketRef = useRef(null);
 
-  const handleToastClick = () => {
-    const navigate = useNavigate();
-    navigate("/sign-in?redirectUrl=/#MonthlyPlan"); // Pass the redirect URL as a query parameter
-  };
-
-  const handleClick = async (usir, locationID) => {
+  const handleClick = async (usir, locationID, modelType) => {
     if (!usir) {
+      console.log(usir);
       setToastDisplay(true);
       if (pricingBracketRef.current) {
         pricingBracketRef.current.scrollIntoView({ behavior: "auto" });
@@ -54,7 +49,7 @@ function CustomLink({ link, className, display, user, locationID, modelType }) {
       <button
         className={className}
         onClick={() => {
-          handleClick(link, user, locationID, modelType);
+          handleClick(user, locationID, modelType);
         }}
       >
         {display}

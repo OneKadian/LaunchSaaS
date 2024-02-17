@@ -2,7 +2,6 @@ import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import { currentUser } from "@clerk/nextjs";
 import CustomLink from "../Extras/CustomLink";
-import CheckoutButton from "./StripeSess";
 const PriceTable2 = async () => {
   const user = await currentUser();
 
@@ -68,7 +67,7 @@ const PriceTable2 = async () => {
           Icon: <CloseIcon className="text-red-600" />,
         },
       ],
-      id: "MonthlyPlan",
+      id: "monthly",
       priceType: "monthly",
       buttonDisplay: "",
       buttonText: "LAUNCH",
@@ -102,7 +101,7 @@ const PriceTable2 = async () => {
           Icon: <DoneIcon className="text-green-400" />,
         },
       ],
-      id: "AnnualPlan",
+      id: "annual",
       priceType: "annual",
       buttonDisplay: "",
       buttonText: "LAUNCH",
@@ -155,8 +154,8 @@ const PriceTable2 = async () => {
                 locationID={price.id}
                 modelType={price.priceType}
                 user={user}
-                link={price.link}
                 display={price.buttonText}
+                link={price.link}
                 className={`text-white bg-primary-700 ${price.buttonDisplay} font-medium rounded-lg w-fit mx-auto text-sm px-20 py-3 text-center`}
               />
               {/* <CustomLink /> */}
