@@ -20,6 +20,7 @@ export async function POST(req) {
     event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
 
     switch (event?.type) {
+      // This method works only for subscriptions and will break under one time payments
       case "checkout.session.completed": // create the customer
         const eventual = event.data.object;
         const subscriptionId = event.data.object.subscription;
@@ -46,6 +47,9 @@ export async function POST(req) {
         break;
       case "invoice.due":
         // send reminder mail to pay to the customer
+        break;
+      case "invoice.paid":
+        // send mail to confirm payment with receipt
         break;
       default:
         console.log("Unhandled webhook event:", event.type);

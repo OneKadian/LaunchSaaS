@@ -13,12 +13,12 @@ import { usePathname } from "next/navigation";
 // Menu for mobile, not visible on PC
 
 const SideMenu = () => {
-  const router = useRouter();
   const pathname = usePathname();
 
   const navigation = [
-    { name: "Pricing", href: "#pricing-section" },
+    { name: "Pricing", href: "#pricing-section2" },
     { name: "Stack", href: "#stack-section" },
+    { name: "Members", href: "/members" },
     { name: "FAQ", href: "#faq-section" },
   ];
 

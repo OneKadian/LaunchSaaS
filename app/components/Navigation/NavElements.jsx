@@ -8,12 +8,12 @@ import { usePathname } from "next/navigation";
 //  Don't forget to add the href as an id to the desired section my friend!
 
 const NavElements = () => {
-  const router = useRouter();
   const pathname = usePathname();
 
   const navigation = [
     { name: "Pricing", href: "#pricing-section2" },
     { name: "Stack", href: "#stack-section" },
+    { name: "Members", href: "/members" },
     { name: "FAQ", href: "#faq-section" },
   ];
 

@@ -19,27 +19,27 @@ export default function OpeningSection() {
   };
 
   // Function to update the countdown
-  const updateCountdown = () => {
-    if (minutes === 0 && seconds === 0) {
-      // Countdown has ended, you can add your desired action here
-      clearInterval(countdownInterval);
-    } else {
-      if (seconds === 0) {
-        setMinutes(minutes - 1);
-        setSeconds(59);
-      } else {
-        setSeconds(seconds - 1);
-      }
-    }
-  };
+  // const updateCountdown = () => {
+  //   if (minutes === 0 && seconds === 0) {
+  //     // Countdown has ended, you can add your desired action here
+  //     clearInterval(countdownInterval);
+  //   } else {
+  //     if (seconds === 0) {
+  //       setMinutes(minutes - 1);
+  //       setSeconds(59);
+  //     } else {
+  //       setSeconds(seconds - 1);
+  //     }
+  //   }
+  // };
 
   // Use useEffect to start the countdown on page load
-  useEffect(() => {
-    const countdownInterval = setInterval(updateCountdown, 1000);
+  // useEffect(() => {
+  //   const countdownInterval = setInterval(updateCountdown, 1000);
 
-    // Cleanup the interval when the component unmounts
-    return () => clearInterval(countdownInterval);
-  }, [minutes, seconds]); // Add minutes and seconds as dependencies
+  //   // Cleanup the interval when the component unmounts
+  //   return () => clearInterval(countdownInterval);
+  // }, [minutes, seconds]); // Add minutes and seconds as dependencies
 
   return (
     <div className="bg-gray-900">
