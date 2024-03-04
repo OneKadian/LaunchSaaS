@@ -6,7 +6,7 @@ import { auth } from "@clerk/nextjs";
 // });
 
 const stripe = require("stripe")(
-  "sk_test_51NzbPASJ8icdk6axeLYBi3tzbsLvJiKVV7IofcMV2XejC6ZSLv0jpfa2L00EXqsy5p0LCQexoegUXG3ZjeIjB73D00IQX8iIDk"
+  process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY_STRING
 );
 
 export async function POST(req) {
@@ -27,7 +27,7 @@ export async function POST(req) {
         userID: userId,
       },
       mode: "subscription",
-      success_url: `${req.headers.get("origin")}/Test`,
+      success_url: `${req.headers.get("origin")}/members`,
       cancel_url: `${req.headers.get("origin")}/Price`,
     });
 
