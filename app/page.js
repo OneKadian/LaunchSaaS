@@ -4,7 +4,7 @@ import FeaturedSection from "./components/Info/FeaturedSection";
 import FeaturedSection2 from "./components/Info/FeaturedSection2";
 import FeaturedSection3 from "./components/Info/FeaturedSection3";
 import NumberStats from "./components/Info/NumberStats";
-import PricingTable from "./components/Pricing/PricingTable";
+import PricingTable from "./components/Pricing/SimplePricingTable";
 import NewsletterSection from "./components/Extras/NewsletterSection";
 import Features from "./components/Info/Features";
 import ContactUsForm from "./components/Extras/ContactUsForm";
@@ -13,7 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Frequently from "./components/Important/Frequently.jsx";
 import Hotkey from "./components/Extras/Hotkey";
 import Testimanual from "./components/Extras/Testimanual";
-import PriceTable2 from "./components/Pricing/PriceTable2";
+import PriceTable2 from "./components/Pricing/DynamicPricingTable";
 import Steps from "./components/Extras/Steps";
 import Feta from "./components/Info/FeaturedSectionDynamic";
 import ScrollInfo from "./components/Info/ScrollInfo";
@@ -40,6 +40,7 @@ export default function Home() {
       {/* <NumberStats /> */}
       {/* <NewsletterSection /> */}
       <Features />
+      {/* <PricingTable /> */}
       <PriceTable2 />
       {/* <Toast /> */}
       {/* <StripePricingTable /> */}

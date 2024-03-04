@@ -1,11 +1,5 @@
-import Link from "next/link";
 import Brian from "../../Images/Brian.png";
 import Image from "next/image";
-import RedoIcon from "@mui/icons-material/Redo";
-import ShortcutIcon from "@mui/icons-material/Shortcut";
-import ReplyIcon from "@mui/icons-material/Reply";
-import SwitchAccessShortcutIcon from "@mui/icons-material/SwitchAccessShortcut";
-import TurnLeftIcon from "@mui/icons-material/TurnLeft";
 
 const SingleTestimonial = () => {
   return (

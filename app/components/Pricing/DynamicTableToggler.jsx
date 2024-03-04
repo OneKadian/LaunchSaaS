@@ -1,15 +1,31 @@
+"use client";
+import Switch from "@mui/material/Switch";
+import { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
-import { currentUser } from "@clerk/nextjs";
 import CustomLink from "../Extras/CustomLink";
-const PriceTable2 = async () => {
-  const user = await currentUser();
 
+const ToggleTable2 = ({ userd }) => {
+  const [isYearly, setIsYearly] = useState(false);
+  const toggleBilling = () => {
+    setIsYearly((prevIsYearly) => !prevIsYearly);
+  };
+
+  // Change the priceType and then add that as stripe-priceType-session into the api with the price id
   const prices = [
     {
       title: "Current",
-      per: "",
-      price: "30+ hrs",
+      per: "/month",
+      prices: [
+        {
+          price: "0",
+          priceType: "zeroMonthly",
+        },
+        {
+          price: "0",
+          priceType: "zeroAnnual",
+        },
+      ],
       description:
         "Your current situation where the idea is nowhere near Launch",
       features: [
@@ -35,15 +51,24 @@ const PriceTable2 = async () => {
         },
       ],
       id: "noPlan",
-      priceType: "",
-      buttonDisplay: "hidden",
-      buttonText: "Before One Kadian",
-      link: "",
+      buttonDisplay: "",
+      buttonText: "LAUNCH",
     },
     {
       title: "Innovator",
       per: "/month",
-      price: "$25",
+      prices: [
+        {
+          price: "25",
+          // priceType: "BasicMonthly",
+          priceType: "monthly",
+        },
+        {
+          price: "240",
+          // priceType: "BasicAnnual",
+          priceType: "annual",
+        },
+      ],
       description: "Take off with us and build your SaaS venture at warp speed",
       features: [
         {
@@ -68,15 +93,24 @@ const PriceTable2 = async () => {
         },
       ],
       id: "monthly",
-      priceType: "monthly",
       buttonDisplay: "",
       buttonText: "LAUNCH",
-      link: "https://buy.stripe.com/test_28o6oUdXp50nb5e4gi",
     },
     {
       title: "Pioneer",
-      per: "/year",
-      price: "$250",
+      per: "/month",
+      prices: [
+        {
+          price: "50",
+          // priceType: "AdvanceMonthly",
+          priceType: "monthly",
+        },
+        {
+          price: "480",
+          // priceType: "AdvanceAnnual",
+          priceType: "annual",
+        },
+      ],
       description:
         "If you're in it for the long haul, this plan is tailor-made for you.",
       features: [
@@ -102,7 +136,6 @@ const PriceTable2 = async () => {
         },
       ],
       id: "annual",
-      priceType: "annual",
       buttonDisplay: "",
       buttonText: "LAUNCH",
       link: "https://buy.stripe.com/test_4gw5kQ9H91Ob4GQ9AD",
@@ -110,15 +143,26 @@ const PriceTable2 = async () => {
   ];
 
   return (
-    <div className="bg-gray-900 py-24 lg:py-32">
-      <div className="space-y-3 mb-12 text-center p-2" id="pricing-section2">
-        <h2 className="text-3xl lg:text-4xl mb-2 font-semibold text-white sm:leading-[55px] sm:tracking-tight">
-          Pricing
-        </h2>
-        <p className="mb-5 font-light text-gray-300 sm:text-xl">
-          Buy once, Launch forever
-        </p>
-      </div>
+    <>
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" class="sr-only peer" />
+        <span class="m-3 text-sm font-medium text-gray-300">
+          Monthly Billing
+        </span>
+        <Switch
+          className="text-white"
+          checked={isYearly}
+          onChange={toggleBilling}
+          sx={{
+            "& .MuiSwitch-track": {
+              backgroundColor: "#CBD5E0", // Change track color to gray-300
+            },
+          }}
+        />
+        <span class="m-3 text-sm font-medium text-gray-300">
+          Annual Billing
+        </span>
+      </label>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-4/5">
           {prices.map((price, index) => (
@@ -127,17 +171,34 @@ const PriceTable2 = async () => {
               key={index}
               className="bg-gray-800 border border-gray-700 flex flex-col p-6 text-center rounded-xl min-h-[500px] justify-center"
             >
-              <h3 className="mb-4 text-3xl text-white font-medium">
-                {price.title}
-              </h3>
-              <div className="flex justify-center items-baseline mb-8">
-                <span className="text-5xl text-gray-100 font-bold">
-                  {price.price}
-                </span>
-                {/* Monthly pricing? just uncomment this span below */}
-                <span className="text-xl font-semibold text-gray-300">
-                  {price.per}
-                </span>
+              <h3 className="text-3xl text-white font-medium">{price.title}</h3>
+              <div className="flex flex-col items-center justify-center min-h-[100px] space-y-4 bg-opacity-70 p-6 bg-gray-800">
+                <div className="flex flex-row">
+                  <div className="flex items-end">
+                    <div className="flex text-left text-[42px] font-semibold leading-6">
+                      {isYearly && price.prices[0].price > 0 ? (
+                        <>
+                          <span className="mr-2 text-gray-300 line-through">
+                            ${price.prices[0].price}
+                          </span>
+                          <span>${price.prices[1].price / 12}</span>
+                        </>
+                      ) : (
+                        `$${price.prices[0].price}`
+                      )}
+                    </div>
+                    <div className="-mb-1 ml-1 text-left text-sm font-medium">
+                      <div>/month</div>
+                    </div>
+                  </div>
+                </div>
+                {price.prices[0].price > 0 ? (
+                  <div className="text-left text-sm text-gray-300">
+                    {isYearly
+                      ? `$${price.prices[1].price} will be charged when annual`
+                      : "when charged monthly"}
+                  </div>
+                ) : null}
               </div>
               <ul className="mb-8 space-y-4 text-left mx-auto">
                 {price.features.map((feature, featureIndex) => (
@@ -152,20 +213,23 @@ const PriceTable2 = async () => {
               </ul>
               <CustomLink
                 locationID={price.id}
-                modelType={price.priceType}
-                user={user}
+                modelType={
+                  isYearly
+                    ? price.prices[1].priceType
+                    : price.prices[0].priceType
+                }
+                user={userd}
                 display={price.buttonText}
-                link={price.link}
                 className={`text-white bg-primary-700 ${price.buttonDisplay} font-medium rounded-lg w-fit mx-auto text-sm px-20 py-3 text-center`}
+                // Elongated button design:
+                // className={`text-white bg-primary-600 ${option.buttonDisplay} font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
               />
-              {/* <CustomLink /> */}
-              {/* <CheckoutButton display={price.buttonDisplay} /> */}
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default PriceTable2;
+export default ToggleTable2;
