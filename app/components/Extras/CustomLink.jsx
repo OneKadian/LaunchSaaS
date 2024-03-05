@@ -15,7 +15,6 @@ function CustomLink({ className, display, user, locationID, modelType }) {
 
   const handleClick = async (usir, locationID, modelType) => {
     if (!usir) {
-      console.log(usir);
       setToastDisplay(true);
       if (pricingBracketRef.current) {
         pricingBracketRef.current.scrollIntoView({ behavior: "auto" });
