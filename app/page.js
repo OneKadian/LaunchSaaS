@@ -40,7 +40,7 @@ export default function Home() {
       {/* <NumberStats /> */}
       {/* <NewsletterSection /> */}
       <Features />
-      {/* <PricingTable /> */}
+      <PricingTable />
       <PriceTable2 />
       {/* <Toast /> */}
       {/* <StripePricingTable /> */}
