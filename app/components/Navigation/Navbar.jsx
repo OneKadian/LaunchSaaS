@@ -44,7 +44,7 @@ const Navbar = async () => {
             )}
             {/* <Hotkey /> */}
             {/* Side menu for mobile */}
-            <SideMenu className="" />
+            <SideMenu />
           </div>
         </div>
       </nav>
