@@ -18,7 +18,7 @@ const features = [
     icon: BuildIcon,
   },
   {
-    name: "Leverage AI",
+    name: " AI",
     description:
       "Integrating AI in your product? Great, we've found dozens that can help.",
     icon: SmartToyIcon,

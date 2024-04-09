@@ -1,6 +1,7 @@
 import FlagIcon from "@mui/icons-material/Flag";
 import SpeedIcon from "@mui/icons-material/Speed";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+import DoneIcon from "@mui/icons-material/Done";
 
 const stepArray = [
   {

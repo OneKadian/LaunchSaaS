@@ -17,7 +17,7 @@ import { Analytics } from "@vercel/analytics/react";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "SaaS Template",
+  title: "Copy Template",
   description: "This is the software you need",
 };
 
