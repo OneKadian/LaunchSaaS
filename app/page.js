@@ -11,6 +11,7 @@ import ContactUsForm from "./components/Extras/ContactUsForm";
 import Toast from "./components/Extras/Toast";
 import Footer from "./components/Footer/Footer";
 import Frequently from "./components/Important/Frequently.jsx";
+import Hero2 from "./components/Important/HeroSection.jsx";
 import Hotkey from "./components/Extras/Hotkey";
 import Testimanual from "./components/Extras/Testimanual";
 import PriceTable2 from "./components/Pricing/DynamicPricingTable";
@@ -26,7 +27,8 @@ export default function Home() {
   // Please comment out and import the components you wish to use / not use here
   return (
     <>
-      <OpeningSection />
+      {/* <OpeningSection /> */}
+      <Hero2 />
       {/* <Hotkey /> */}
       <FeaturedSection />
       <FeaturedSection2 />
