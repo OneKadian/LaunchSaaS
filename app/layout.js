@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <Navbar />
         <body className={montserrat.className}>
+          <Navbar />
           {children}
           <SpeedInsights />
           <Analytics />

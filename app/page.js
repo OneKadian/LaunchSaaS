@@ -21,12 +21,14 @@ import Estimates from "./components/Info/Estimates";
 import PlainCTA from "./components/Info/PlainCTA";
 import FoundersNote from "./components/Extras/FoundersNote";
 import StripePricingTable from "./components/Pricing/StripePricingTable";
+import HeroSection from "./components/Important/HeroSection";
 
 export default function Home() {
   // Please comment out and import the components you wish to use / not use here
   return (
     <>
-      <OpeningSection />
+      <HeroSection />
+      {/* <OpeningSection /> */}
       {/* <Hotkey /> */}
       <FeaturedSection />
       <FeaturedSection2 />
