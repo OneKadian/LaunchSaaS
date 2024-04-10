@@ -1,4 +1,5 @@
 import OpeningSection from "./components/Important/OpeningSection";
+import HeroSection from "./components/Important/HeroSection";
 import CallToAction from "./components/Important/CallToAction";
 import FeaturedSection from "./components/Info/FeaturedSection";
 import FeaturedSection2 from "./components/Info/FeaturedSection2";
@@ -27,14 +28,12 @@ export default function Home() {
   // Please comment out and import the components you wish to use / not use here
   return (
     <>
-      {/* <OpeningSection /> */}
-      <Hero2 />
+      <OpeningSection />
       {/* <Hotkey /> */}
       <FeaturedSection />
       <FeaturedSection2 />
       <FeaturedSection3 />
       {/* <Feta /> */}
-      {/* <Steps /> */}
       {/* <CallToAction /> */}
       {/* <ScrollInfo /> */}
       {/* <Estimates /> */}
