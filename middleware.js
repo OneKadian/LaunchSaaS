@@ -7,7 +7,14 @@ import { NextResponse } from "next/server";
 
 export default authMiddleware({
   // Making sure homepage route and API, especially the webhook, are both public!
-  publicRoutes: ["/", "/api/(.*)", "/Price", "/members"],
+  publicRoutes: [
+    "/",
+    "/api/(.*)",
+    "/Price",
+    "/members",
+    "/PrivacyPolicy",
+    "/Terms&Conditions",
+  ],
 });
 
 export const config = {
