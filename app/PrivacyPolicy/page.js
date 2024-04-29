@@ -1,19 +1,15 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const PrivacyContent = [
   {
     heading: "1. Information Collection",
     description:
-      "OneKadian may collect personal information when necessary to provide you with our services. We will inform you of the purposes for which your information is collected and how it will be used.",
+      "Indie Hacker Kit may collect personal information when necessary to provide you with our services. We will inform you of the purposes for which your information is collected and how it will be used.",
   },
   {
     heading: "2. Account Sign-Up",
     description:
-      "You may sign up for OneKadian using your Google account. When you do so, your account username will be prefilled with your name and your public profile picture.",
+      "You may sign up for Indie Hacker Kit using your Google account. When you do so, your account username will be prefilled with your name and your public profile picture.",
   },
   {
     heading: "3. Data Retention and Protection",
@@ -32,50 +28,48 @@ const PrivacyContent = [
   },
 ];
 
-export default function Example() {
+export default function PrivacyPolicy() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-      <div className="absolute inset-0 -z-10 overflow-hidden"></div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-          <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-                Privacy Policy
-              </h1>
-            </div>
+    <div className="px-6 py-24 lg:py-32 sm:py-20 bg-gray-900">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-16">
+        <div className="md:col-span-1">
+          <h1 className="text-3xl font-bold text-gray-300 sm:text-4xl">
+            Privacy Policy
+          </h1>
+          <div className="mt-8 text-gray-300">
+            <ul>
+              {PrivacyContent.map((item, index) => (
+                <li key={index} className="mt-6">
+                  <strong>{item.heading}</strong>
+                  <br />
+                  {item.description}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-12">
+              <strong>Cancellation and Refund</strong>
+              <br />
+              To request a refund, please contact us directly at{" "}
+              <p className="text-blue-500">manageanirudh@gmail.com</p> within 2
+              hours of your subscription purchase. Refund requests will be
+              reviewed on a case-by-case basis, and we will respond to your
+              request promptly.
+            </p>
           </div>
         </div>
-        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="md:col-span-1">
           <img
-            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
             src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-            alt=""
+            alt="Screenshot"
+            className="w-full max-w-lg mx-auto rounded-xl shadow-xl"
           />
         </div>
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-          <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-300 lg:max-w-lg">
-              <ul>
-                {PrivacyContent.map((item, index) => (
-                  <li key={index} className="mt-8">
-                    <strong>{item.heading}</strong>
-                    <br />
-                    {item.description}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-12">
-                <strong>Cancellation and Refund</strong>
-                <br />
-                To request a refund, please contact us directly at
-                manageanirudh@gmail.com within 2 hours of your subscription
-                purchase. Refund requests will be reviewed on a case-by-case
-                basis, and we will respond to your request promptly.
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div className="max-w-7xl mx-auto mt-16 text-gray-300">
+        <p className="text-center">
+          For more information, please review our{" "}
+          <Link href="/PrivacyPolicy">Privacy Policy</Link>
+        </p>
       </div>
     </div>
   );

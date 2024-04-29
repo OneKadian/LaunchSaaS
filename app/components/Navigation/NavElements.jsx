@@ -13,8 +13,9 @@ const NavElements = () => {
   const navigation = [
     { name: "Pricing", href: "#pricing-section2" },
     { name: "Stack", href: "#stack-section" },
-    { name: "Members", href: "/members" },
+    // { name: "Members", href: "/members" },
     { name: "FAQ", href: "#faq-section" },
+    { name: "Privacy Policy", href: "/PrivacyPolicy" },
   ];
 
   const membersNavigation = [
