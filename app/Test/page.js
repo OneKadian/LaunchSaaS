@@ -83,7 +83,7 @@ export default function Shipping() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-                Business Ideas
+                Business Ideas 💸
               </h1>
             </div>
           </div>
