@@ -31,8 +31,18 @@ const SideMenu = () => {
   ];
 
   const memoizedNavigation = useMemo(() => {
-    return pathname === "/members" ? membersNavigation : navigation;
-  }, [pathname, navigation, membersNavigation]); // Recompute only if relevant values change
+    switch (pathname) {
+      case "/members":
+        return membersNavigation;
+      case "/sign-in":
+        return membersNavigation;
+      case "/":
+        return navigation;
+      // ...other cases
+      default:
+        return navigation;
+    }
+  }, [pathname, navigation, membersNavigation]);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
