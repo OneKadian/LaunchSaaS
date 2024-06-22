@@ -5,11 +5,8 @@ import Link from "next/link";
 
 const Hero2 = () => {
   const openingCopy = {
-    // announcementText: "Literally everything you need to get started",
-    announcementText:
-      "Impact-Site-Verification: fbee1ac6-8494-4942-afaf-d2205b425d0a",
-    // titleText: "Launch your SaaS in the next 30 Minutes",
-    titleText: "Impact-Site-Verification: fbee1ac6-8494-4942-afaf-d2205b425d0a",
+    announcementText: "Literally everything you need to get started",
+    titleText: "Launch your SaaS in the next 30 Minutes",
     subtitleText:
       "Code Boilerplate, resource sheet and templates to turn developers into founders and help them launch instantly",
   };
