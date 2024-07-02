@@ -60,12 +60,10 @@ const ToggleTable2 = ({ userd }) => {
       prices: [
         {
           price: "25",
-          // priceType: "BasicMonthly",
           priceType: "monthly",
         },
         {
           price: "240",
-          // priceType: "BasicAnnual",
           priceType: "annual",
         },
       ],
@@ -102,12 +100,10 @@ const ToggleTable2 = ({ userd }) => {
       prices: [
         {
           price: "50",
-          // priceType: "AdvanceMonthly",
           priceType: "monthly",
         },
         {
           price: "480",
-          // priceType: "AdvanceAnnual",
           priceType: "annual",
         },
       ],
@@ -187,6 +183,7 @@ const ToggleTable2 = ({ userd }) => {
                         `$${price.prices[0].price}`
                       )}
                     </div>
+
                     <div className="-mb-1 ml-1 text-left text-sm font-medium">
                       <div>/month</div>
                     </div>

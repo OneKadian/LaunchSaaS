@@ -1,7 +1,6 @@
 "use client";
 
 // Hero section, define your product with what it can do and offer a CTA button
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import SingleTestimonial from "../Extras/SingleTestimonial";
@@ -17,29 +16,6 @@ export default function OpeningSection() {
     subtitleText:
       "Code Boilerplate, resource sheet and templates to turn developers into founders and help them launch instantly",
   };
-
-  // Function to update the countdown
-  // const updateCountdown = () => {
-  //   if (minutes === 0 && seconds === 0) {
-  //     // Countdown has ended, you can add your desired action here
-  //     clearInterval(countdownInterval);
-  //   } else {
-  //     if (seconds === 0) {
-  //       setMinutes(minutes - 1);
-  //       setSeconds(59);
-  //     } else {
-  //       setSeconds(seconds - 1);
-  //     }
-  //   }
-  // };
-
-  // Use useEffect to start the countdown on page load
-  // useEffect(() => {
-  //   const countdownInterval = setInterval(updateCountdown, 1000);
-
-  //   // Cleanup the interval when the component unmounts
-  //   return () => clearInterval(countdownInterval);
-  // }, [minutes, seconds]); // Add minutes and seconds as dependencies
 
   return (
     <div className="bg-gray-900">

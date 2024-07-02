@@ -156,7 +156,7 @@ const PricingTable = async () => {
           {pricingOptions.map((option, index) => (
             <div
               key={index}
-              className="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border border-gray-700 shadow text-white"
+              className="flex flex-col justify-center p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border border-gray-700 shadow text-white"
             >
               <h3 className="mb-4 text-2xl font-semibold">{option.title}</h3>
               <p className="font-light text-gray-300 sm:text-lg">
@@ -177,14 +177,16 @@ const PricingTable = async () => {
                   </li>
                 ))}
               </ul>
-              <CustomLink
-                locationID={option.id}
-                modelType={option.prices[0].priceType}
-                user={user}
-                display={option.buttonText}
-                // className={`text-white bg-primary-700 ${option.buttonDisplay} font-medium rounded-lg w-fit mx-auto text-sm px-20 py-3 text-center`}
-                className={`text-white bg-primary-600 ${option.buttonDisplay} font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
-              />
+              <div className="flex justify-center">
+                <CustomLink
+                  locationID={option.id}
+                  modelType={option.prices[0].priceType}
+                  user={user}
+                  display={option.buttonText}
+                  // className={`text-white bg-primary-700 ${option.buttonDisplay} font-medium rounded-lg w-fit mx-auto text-sm px-20 py-3 text-center`}
+                  className={`text-white bg-primary-600 ${option.buttonDisplay} font-medium w-4/5 rounded-lg text-sm px-5 py-2.5 text-center`}
+                />
+              </div>
             </div>
           ))}
         </div>

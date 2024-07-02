@@ -1,5 +1,4 @@
 // Super important section, update the array to change q and a
-
 const Frequently = () => {
   const Questions = [
     {

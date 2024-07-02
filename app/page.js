@@ -18,7 +18,6 @@ import Steps from "./components/Extras/Steps";
 import Feta from "./components/Info/FeaturedSectionDynamic";
 import ScrollInfo from "./components/Info/ScrollInfo";
 import Estimates from "./components/Info/Estimates";
-import PlainCTA from "./components/Info/PlainCTA";
 import FoundersNote from "./components/Extras/FoundersNote";
 import StripePricingTable from "./components/Pricing/StripePricingTable";
 import HeroSection from "./components/Important/HeroSection";
@@ -35,21 +34,21 @@ export default function Home() {
       <FeaturedSection3 />
       {/* <Feta /> */}
       {/* <Steps /> */}
-      {/* <CallToAction /> */}
+
       {/* <ScrollInfo /> */}
       {/* <Estimates /> */}
       {/* <PricingTable /> */}
       {/* <NumberStats /> */}
       {/* <NewsletterSection /> */}
       <Features />
-      <PricingTable />
+      {/* <PricingTable /> */}
       <PriceTable2 />
       {/* <Toast /> */}
       {/* <StripePricingTable /> */}
       {/* <ContactUsForm /> */}
       {/* <Testimanual /> */}
-      {/* <PlainCTA /> */}
       <FoundersNote />
+      <CallToAction />
       <Frequently />
       <Footer />
     </>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import notion from "../../Images/notionTemplate.png";
+import components2 from "../../Images/notionTemplate.png";
 import Image from "next/image";
 
 export default function CallToAction() {
@@ -8,6 +8,8 @@ export default function CallToAction() {
     CTAHeader2: "Just ship it!",
     CTADescription:
       "Fuel your entrepreneurial journey with OneKadian. Turn your ideas into reality and launch your SaaS venture with confidence.",
+    ButtonText1: "Get started",
+    ButtonText2: "Learn More",
   };
 
   // Call to Action section
@@ -30,27 +32,30 @@ export default function CallToAction() {
                 href="#"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Get started
+                {CTAcopy.ButtonText1}
               </Link>
               <Link
                 href="#"
                 className="text-sm font-semibold leading-6 text-white"
               >
-                Learn more <span aria-hidden="true">→</span>
+                {CTAcopy.ButtonText2}
+                <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
           {/* Image section */}
-          {/* <div className="mt-16 h-80 lg:mt-8">
-            <img
-              className=" left-0 top-0 w-[50rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="App screenshot"
-              width={1824}
-              height={1080}
+          {/* small image similar to featured section  */}
+          <div className="flex justify-center items-center">
+            <Image
+              src={components2}
+              alt="Product screenshot"
+              className="w-[48rem]  rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              width={2432}
+              height={1442}
             />
-          </div> */}
-          <div className="mt-12 lg:mt-0 flex justify-center items-center">
+          </div>
+          {/* Larger image on laptop screen  */}
+          {/* <div className="mt-12 lg:mt-0 flex justify-center items-center">
             <Image
               src={notion}
               alt="Product screenshot"
@@ -58,7 +63,7 @@ export default function CallToAction() {
               width={2432}
               height={1442}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
