@@ -17,10 +17,6 @@ const PricingTable = async () => {
           price: "0",
           priceType: "zeroMonthly",
         },
-        {
-          price: "0",
-          priceType: "zeroAnnual",
-        },
       ],
       description:
         "Your current situation where the idea is nowhere near Launch",
@@ -59,11 +55,6 @@ const PricingTable = async () => {
           // priceType: "BasicMonthly",
           priceType: "monthly",
         },
-        {
-          price: "240",
-          // priceType: "BasicAnnual",
-          priceType: "annual",
-        },
       ],
       description: "Take off with us and build your SaaS venture at warp speed",
       features: [
@@ -101,11 +92,6 @@ const PricingTable = async () => {
           // priceType: "AdvanceMonthly",
           priceType: "monthly",
         },
-        {
-          price: "480",
-          // priceType: "AdvanceAnnual",
-          priceType: "annual",
-        },
       ],
       description:
         "If you're in it for the long haul, this plan is tailor-made for you.",
@@ -134,7 +120,6 @@ const PricingTable = async () => {
       id: "annually",
       buttonDisplay: "",
       buttonText: "LAUNCH",
-      link: "https://buy.stripe.com/test_4gw5kQ9H91Ob4GQ9AD",
     },
   ];
 

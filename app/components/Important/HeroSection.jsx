@@ -24,7 +24,7 @@ const HeroSection = () => {
               {openingCopy.titleText}
             </h1>
             <div className="mx-auto max-w-3xl">
-              <p className="mb-6 text-xl font-medium text-gray-400 dark:text-slate-400">
+              <p className="mb-6 text-xl font-medium text-gray-400">
                 {openingCopy.subtitleText}
               </p>
               <div className="mt-10 flex flex-col items-center justify-center gap-y-6 sm:flex-row sm:justify-center sm:gap-x-6">
@@ -46,7 +46,7 @@ const HeroSection = () => {
           {Image && (
             <div className="relative m-auto max-w-5xl">
               <Image
-                className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
+                className="mx-auto h-auto w-full rounded-md bg-gray-400"
                 src={notion}
                 alt="notion"
                 width={1024}
