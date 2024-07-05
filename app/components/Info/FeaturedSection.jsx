@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Code written",
+  featuredHeading: "Build Fast like your life depends on it ( it could )",
   featuredDescription:
-    "All the code you'll need to launch is ready, use it to build products swiftly.",
+    "Next.js boilerplate in 4 themes with pre-setup auth, payments and database. Still can't launch? You belong to the no code tools 😑",
 };
+
 // In case you wish list your features
 // const features = [
 //   {
@@ -34,7 +35,7 @@ export default function FeaturedSection() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4 lg:flex lg:items-center">
             <div className="lg:max-w-lg">
-              <h2 className="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight text-white">
+              <h2 className="text-3xl lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight text-white">
                 {featuredCopy.featuredHeading}
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">

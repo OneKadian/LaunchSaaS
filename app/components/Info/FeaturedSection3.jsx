@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Planning done",
+  featuredHeading: "Closest you come to creating a second brain",
   featuredDescription:
-    "Use the notion template with the knowledge inside to manage and execute your ideas.",
+    "Manage your workflow and access the knowledge center to put the product cycle in the right direction, unlike your life.",
 };
 
 // If you wish to list your features
@@ -35,7 +35,7 @@ export default function FeaturedSection2() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4 lg:flex lg:items-center">
             <div className="lg:max-w-lg">
-              <h2 className="text-3xl p-2 lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight text-white">
+              <h2 className="text-3xl lg:text-4xl font-semibold sm:leading-[55px] sm:tracking-tight text-white">
                 {featuredCopy.featuredHeading}
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
